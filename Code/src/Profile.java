@@ -1,60 +1,61 @@
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.Date;
 
 public class Profile {
 
-    private String firstName,
+
+
+    private Image photo;
+    private String
+            iD,
+            firstName,
             middleName,
             lastName,
             suffix,
             sex,
-            address,
-            city,
-            state,
             race,
             gender,
             ethnicity,
             eyeColor,
             restrictions,
             hairColor;
+
     private int height,
             weight,
-            zipCode,
             SSN;
-    private boolean state_ID,
+    private Address place_Of_Residence;
+
+    private boolean
             sex_offender,
             felonyConviction,
             dvCharge,
             dvConviction,
             ncic_want,
             weapon_permit;
-    private enum citizen{FALSE,TRUE,VISA};
-    private Date date_of_birth,date_of_experation,date_of_death;
+    private Citizen citizenship;
+    private Date date_of_birth,date_of_experation;
     private ArrayList<Crime> criminalHistory;
 
     public Profile()
     {
+        iD="";
         firstName="";
         middleName="";
         lastName="";
         suffix="";
         sex="";
-        address="";
-        city="";
-        state="";
         race="";
         gender="";
         ethnicity="";
         eyeColor="";
         restrictions="";
         hairColor="";
-        sex_offender=false;
-        felonyConviction=false;
-        dvCharge=false;
-        dvConviction=false;
-        ncic_want=false;
-        weapon_permit=false;
-        criminalHistory=null;
+        sex_offender=felonyConviction=dvCharge=ncic_want=weapon_permit;
+        citizenship=Citizen.NA;
+        date_of_birth=date_of_experation=null;
+        criminalHistory=new ArrayList<Crime>();
+        photo=null;
     }
     public String getFirstName() {
         return firstName;
@@ -94,30 +95,6 @@ public class Profile {
 
     public void setSex(String sex) {
         this.sex = sex;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    public String getCity() {
-        return city;
-    }
-
-    public void setCity(String city) {
-        this.city = city;
-    }
-
-    public String getState() {
-        return state;
-    }
-
-    public void setState(String state) {
-        this.state = state;
     }
 
     public String getRace() {
@@ -184,28 +161,12 @@ public class Profile {
         this.weight = weight;
     }
 
-    public int getZipCode() {
-        return zipCode;
-    }
-
-    public void setZipCode(int zipCode) {
-        this.zipCode = zipCode;
-    }
-
     public int getSSN() {
         return SSN;
     }
 
     public void setSSN(int SSN) {
         this.SSN = SSN;
-    }
-
-    public boolean isState_ID() {
-        return state_ID;
-    }
-
-    public void setState_ID(boolean state_ID) {
-        this.state_ID = state_ID;
     }
 
     public boolean isSex_offender() {
@@ -272,18 +233,42 @@ public class Profile {
         this.date_of_experation = date_of_experation;
     }
 
-    public Date getDate_of_death() {
-        return date_of_death;
+    public Address getPlace_Of_Residence() {
+        return place_Of_Residence;
     }
 
-    public void setDate_of_death(Date date_of_death) {
-        this.date_of_death = date_of_death;
+    public void setPlace_Of_Residence(Address place_Of_Residence) {
+        this.place_Of_Residence = place_Of_Residence;
     }
 
-    public static void main(String args[])
-    {
-        
-        System.out.print("hello");
+    public ArrayList<Crime> getCriminalHistory() {
+        return criminalHistory;
     }
 
+    public void setCriminalHistory(ArrayList<Crime> criminalHistory) {
+        this.criminalHistory = criminalHistory;
+    }
+
+    public String getiD() {
+        return iD;
+    }
+
+    public void setiD(String iD) {
+        this.iD = iD;
+    }
+    public Image getPhoto() {
+        return photo;
+    }
+
+    public void setPhoto(Image photo) {
+        this.photo = photo;
+    }
+
+    public Citizen getCitizenship() {
+        return citizenship;
+    }
+
+    public void setCitizenship(Citizen citizenship) {
+        this.citizenship = citizenship;
+    }
 }
