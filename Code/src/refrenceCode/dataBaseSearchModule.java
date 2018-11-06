@@ -1,4 +1,4 @@
-
+package refrenceCode;
 
 public interface dataBaseSearchModule {
     /**
@@ -7,7 +7,7 @@ public interface dataBaseSearchModule {
      * provided then the search shall not cross reference that field, if no person is found NULL
      * is returned
      */
-    public Profile searchByName(String firstName,String middleName,String lastName,Address address );
+    public Profile searchByName(String firstName, String middleName, String lastName, Address address );
 
     /**
      *
