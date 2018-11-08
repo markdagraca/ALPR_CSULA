@@ -3,6 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Code.iml" filepath="$PROJECT_DIR$/Code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DataBaseConnectionModule/DataBaseConnectionModule.iml" filepath="$PROJECT_DIR$/DataBaseConnectionModule/DataBaseConnectionModule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OCR module/OCR module.iml" filepath="$PROJECT_DIR$/OCR module/OCR module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OCRmodule/OCRmodule.iml" filepath="$PROJECT_DIR$/OCRmodule/OCRmodule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ObjectRecognitionModule/ObjectRecognitionModule.iml" filepath="$PROJECT_DIR$/ObjectRecognitionModule/ObjectRecognitionModule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RefrenceCode/RefrenceCode.iml" filepath="$PROJECT_DIR$/RefrenceCode/RefrenceCode.iml" />
     </modules>
   </component>
 </project>
