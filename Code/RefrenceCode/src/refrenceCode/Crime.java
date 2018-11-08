@@ -4,58 +4,17 @@ import java.util.Date;
 
 public class Crime {
 
-	private String Description,comment;
-	private int penalCode;
+    private String penalCode,Description,comment;
     private Date date_Of_Occurance,trial_Date,Conviction_Date;
-    private String location_Of_Occurance;
+    private Address location_Of_Occurance;
     private CaseStatus outcome;
-    
-    private static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";  
-    private static final String DB_URL = "jdbc:mysql://localhost:3306/licensedata";
-    
-    private static final String USER = "root";
-    private static final String PASS = "a931019555";
 
-    public Crime(String id) {
-    	Connection conn = null;
-        Statement stmt = null;
 
-        try{
-            Class.forName(JDBC_DRIVER);
-
-            conn = DriverManager.getConnection(DB_URL,USER,PASS);
-            
-            stmt = conn.createStatement();
-            String sql;
-            sql = "SELECT * FROM crime WHERE license_number = '" + id + "'";
-            ResultSet rs = stmt.executeQuery(sql);
-
-            while(rs.next()) {           	          	
-            	this.penalCode = rs.getInt("penalCode");
-            	this.Description = rs.getString("descriptiontext");
-            	this.comment = rs.getString("commenttext");
-            	this.date_Of_Occurance = rs.getDate("date_Of_Occurance");
-            	this.trial_Date = rs.getDate("trial_Date");
-            	this.Conviction_Date = rs.getDate("conviction_Date");
-            	this.location_Of_Occurance = rs.getString("location_Of_Occurance");
-            	String caseoutcome = rs.getString("outcome");  
-            	this.outcome = outcome.valueOf(caseoutcome.toUpperCase());
-            }
-            rs.close();
-            stmt.close();
-            conn.close();
-        }catch(SQLException se){
-            se.printStackTrace();
-        }catch(Exception e){
-            e.printStackTrace();
-        }	
-    }
-
-    public int getPenalCode() {
+    public String getPenalCode() {
         return penalCode;
     }
 
-    public void setPenalCode(int penalCode) {
+    public void setPenalCode(String penalCode) {
         this.penalCode = penalCode;
     }
 
@@ -99,11 +58,15 @@ public class Crime {
         Conviction_Date = conviction_Date;
     }
 
-    public String getLocation_Of_Occurance() {
+    public Address getLocation_Of_Occurance() {
         return location_Of_Occurance;
     }
 
-    public void setLocation_Of_Occurance(String location_Of_Occurance) {
+    public void setLocation_Of_Occurance(Address location_Of_Occurance) {
         this.location_Of_Occurance = location_Of_Occurance;
     }
+
+
+
+
 }
