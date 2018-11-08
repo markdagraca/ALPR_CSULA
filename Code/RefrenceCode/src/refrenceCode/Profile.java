@@ -5,10 +5,7 @@ import java.util.ArrayList;
 import java.util.Date;
 
 public class Profile {
-
-
-
-    private Image photo;
+	private Image photo;
     private String
             iD,
             firstName,
@@ -37,7 +34,7 @@ public class Profile {
             weapon_permit;
     private Citizen citizenship;
     private Date date_of_birth,date_of_experation;
-    private ArrayList<Crime> criminalHistory;
+    private ArrayList<Crime> criminalHistory = new ArrayList<Crime>();
 
     public Profile()
     {
@@ -59,6 +56,105 @@ public class Profile {
         criminalHistory=new ArrayList<Crime>();
         photo=null;
     }
+    
+    private static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";  
+    private static final String DB_URL = "jdbc:mysql://localhost:3306/licensedata";
+    
+    private static final String USER = "root";
+    private static final String PASS = "a931019555";
+    
+    public Profile(String plateNum) {
+    	Connection conn = null;
+        Statement stmt = null;
+    	
+        try{
+            Class.forName(JDBC_DRIVER);
+
+            conn = DriverManager.getConnection(DB_URL,USER,PASS);
+            
+            stmt = conn.createStatement();
+            String sql;
+            sql = "SELECT * FROM ownerinformation a INNER JOIN personalinformation b ON a.license_number = b.license_number"
+            		+ " WHERE plate_number = '" + plateNum + "'";
+            ResultSet rs = stmt.executeQuery(sql);
+
+            while(rs.next()) {
+            	this.iD = rs.getString("license_number");
+            	this.firstName = rs.getString("firstname");
+            	this.middleName = rs.getString("middlename");
+            	if(middleName.equals("null")) {
+            		middleName = "";
+            	}
+            	
+            	this.lastName = rs.getString("lastname");
+            	this.suffix = "";
+            	this.gender = rs.getString("gender");
+            	this.date_of_birth = rs.getDate("birthday");
+            	String citizen = rs.getString("citizen");
+            	citizenship = citizenship.valueOf(citizen.toUpperCase());
+            	this.race = rs.getString("race");
+            	this.ethnicity = rs.getString("ethnicity");
+            	this.eyeColor = rs.getString("eyecolor");
+            	this.hairColor = rs.getString("hairColor");
+            	this.height = rs.getInt("height");
+            	this.weight = rs.getInt("weight");
+            	this.SSN = rs.getInt("ssn");  
+            	this.restrictions = "No";
+            	
+            	this.place_Of_Residence = new Address(iD);
+            	
+            	int booleanBridge = rs.getInt("crime");
+            	if(booleanBridge == 1) {
+            		sql = "SELECT * FROM crime WHERE license_number = '" + iD + "'";
+            		rs = stmt.executeQuery(sql);
+            		while(rs.next()) {
+            			booleanBridge = rs.getInt("sexoffender");
+                    	if(booleanBridge == 1) {
+                    		this.sex_offender = true;
+                    	}
+                    	booleanBridge = rs.getInt("felonyconviction");
+                    	if(booleanBridge == 1) {
+                    		this.felonyConviction = true;
+                    	}
+                    	booleanBridge = rs.getInt("dvcharge");
+                    	if(booleanBridge == 1) {
+                    		this.dvCharge = true;
+                    	}
+                    	booleanBridge = rs.getInt("dvconviction");
+                    	if(booleanBridge == 1) {
+                    		this.dvConviction = true;
+                    	}
+                    	booleanBridge = rs.getInt("ncicwant");
+                    	if(booleanBridge == 1) {
+                    		this.ncic_want = true;
+                    	}
+                    	booleanBridge = rs.getInt("weaponpermit");
+                    	if(booleanBridge == 1) {
+                    		this.weapon_permit = true;
+                    	}                                 	
+            		}
+                    this.criminalHistory.add(new Crime(iD));
+            	}
+            	
+            }
+            rs.close();
+            stmt.close();
+            conn.close();
+            
+//            if(this.licenseNumber != null) {
+//            	this.compare = true;
+//            }
+//            else {
+//            	this.compare = false;
+//            }
+            
+        }catch(SQLException se){
+            se.printStackTrace();
+        }catch(Exception e){
+            e.printStackTrace();
+        }	
+    }
+    
     public String getFirstName() {
         return firstName;
     }
