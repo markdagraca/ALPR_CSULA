@@ -1,47 +1,19 @@
 package refrenceCode;
 
 public class Address {
-	private String street,
+    private String street,
     city;
-    private String zipcode;
+    /**
+     * Zip Code -1 means no ZipCode present
+     */
+    private int zipcode;
     private States state;
-    
-    private static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";  
-    private static final String DB_URL = "jdbc:mysql://localhost:3306/licensedata";
-    
-    private static final String USER = "root";
-    private static final String PASS = "a931019555";
 
-    public Address(String id) {
-    	Connection conn = null;
-        Statement stmt = null;
-    	
-        try{
-            Class.forName(JDBC_DRIVER);
+    public Address() {
+        street=city="";
+        zipcode=-1;
+        state=null;
 
-            conn = DriverManager.getConnection(DB_URL,USER,PASS);
-            
-            stmt = conn.createStatement();
-            String sql;
-            sql = "SELECT * FROM address WHERE license_number = '" + id + "'";
-            ResultSet rs = stmt.executeQuery(sql);
-
-            while(rs.next()) {           	
-            	this.street = rs.getString("address");
-            	this.city = rs.getString("city");
-            	String states = rs.getString("region");
-            	this.state  = state.valueOf(states);
-            	this.zipcode = rs.getString("postalcode");
-            	
-            }
-            rs.close();
-            stmt.close();
-            conn.close();
-        }catch(SQLException se){
-            se.printStackTrace();
-        }catch(Exception e){
-            e.printStackTrace();
-        }
     }
 
     public String getStreet() {
@@ -60,11 +32,11 @@ public class Address {
         this.city = city;
     }
 
-    public String getZipcode() {
+    public int getZipcode() {
         return zipcode;
     }
 
-    public void setZipcode(String zipcode) {
+    public void setZipcode(int zipcode) {
         this.zipcode = zipcode;
     }
 
@@ -79,4 +51,5 @@ public class Address {
     public String toString() {
         return street +", "+city+", "+state+", "+zipcode;
     }
+
 }
