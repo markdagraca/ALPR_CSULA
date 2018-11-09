@@ -1,22 +1,8 @@
+import refrenceCode.*;
 
-import java.lang.Thread.State;
-import java.sql.Connection;
-import java.sql.Date;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.time.Year;
 import java.util.ArrayList;
-
-import refrenceCode.Address;
-import refrenceCode.Citizen;
-import refrenceCode.Crime;
-import refrenceCode.Profile;
-import refrenceCode.States;
-import refrenceCode.Vehicle.VehicleType;
-
-import refrenceCode.dataBaseSearchModule;
 
 public class DataBaseSearch implements dataBaseSearchModule{
 	
@@ -139,7 +125,7 @@ public class DataBaseSearch implements dataBaseSearchModule{
             		if(rs.getInt("isWanted") == 1) {
             			vechicleInf.setWanted(true);
             		}
-            		vechicleInf.setVehicleType(VehicleType.valueOf("AUTO"));
+            		vechicleInf.setVehicleType(Vehicle.VehicleType.valueOf("AUTO"));
             		String date = rs.getString("expirationdate");
             		vechicleInf.setYear(Year.parse(date.substring(0, 4)));
             		vechicleInf.setRegistrationDateExperation(rs.getDate("expirationdate"));
