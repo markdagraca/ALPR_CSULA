@@ -26,7 +26,7 @@ public class DataBaseSearch implements dataBaseSearchModule{
 		long start=0,end=0;
 		start=date.getTime();
 		System.out.println("Start "+start);
-		System.out.println(test.searchByPlate("F9445584",States.CA));
+		System.out.println(test.searchByPlate("6HCM166",States.CA));
 		end=date.getTime();
 		System.out.println("End "+end);
 		System.out.println("Diff "+(end-start));
