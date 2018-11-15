@@ -7,10 +7,10 @@ import java.util.ArrayList;
 public class DataBaseSearch implements dataBaseSearchModule{
 	
 	private static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";  
-    private static final String DB_URL = "jdbc:mysql://localhost:3306/licensedata";
+    private static final String DB_URL = "jdbc:mysql://cs3.calstatela.edu:3306/cs3220stu74";
     
-    private static final String USER = "root";
-    private static final String PASS = "a931019555";
+    private static final String USER = "cs3220stu74";
+    private static final String PASS = "NfOE8kOQ";
     private Profile allInf = new Profile();
     private Vehicle vechicleInf = new Vehicle();
     private String idNumber;
