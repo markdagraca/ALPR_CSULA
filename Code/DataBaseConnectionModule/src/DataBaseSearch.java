@@ -4,6 +4,7 @@ import java.sql.*;
 import java.time.Year;
 import java.util.ArrayList;
 
+
 public class DataBaseSearch implements dataBaseSearchModule{
 	
 	private static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";  
@@ -15,9 +16,6 @@ public class DataBaseSearch implements dataBaseSearchModule{
     private Vehicle vechicleInf = new Vehicle();
     private String idNumber;
     private Address newAddress;
-
-
-
 
 	@Override
 	public Profile searchByName(String firstName, String middleName, String lastName, Address address) {
@@ -31,7 +29,7 @@ public class DataBaseSearch implements dataBaseSearchModule{
             
             stmt = conn.createStatement();
             String sql;
-            sql = "SELECT * FROM personalinformation WHERE firstname = '" + firstName + "' AND"
+            sql = "SELECT firstname, middlename, lastname, license_number FROM personalinformation WHERE firstname = '" + firstName + "' AND"
             											  + " middlename = '" + middleName + "' AND "
             											  + " lastname = '" + lastName + "'";
             ResultSet rs = stmt.executeQuery(sql);
@@ -51,7 +49,7 @@ public class DataBaseSearch implements dataBaseSearchModule{
             String state = null;
             int zipCode = 0;
             if(id != null) {
-            	sql = "SELECT * FROM address WHERE address = '" + address.getStreet() + "' AND "
+            	sql = "SELECT address, city, region, postalcode FROM address WHERE address = '" + address.getStreet() + "' AND "
             										+ "city = '" + address.getCity() + "' AND "
             										+ "region = '" + address.getState() + "' AND "
             										+ "postalcode = '" + address.getZipcode() + "'";
@@ -98,10 +96,10 @@ public class DataBaseSearch implements dataBaseSearchModule{
             Class.forName(JDBC_DRIVER);
 
             conn = DriverManager.getConnection(DB_URL,USER,PASS);
-           
+
             stmt = conn.createStatement();
             String sql;
-            sql = "SELECT * FROM plateinformation a INNER JOIN address b" + 
+            sql = "SELECT plate_number, state FROM plateinformation a INNER JOIN address b" + 
             		" on a.license_number = b.license_number WHERE plate_number = '" + plateNumber + "' AND"
             											  + " state = '" + state + "'";
             ResultSet rs = stmt.executeQuery(sql);
@@ -111,7 +109,6 @@ public class DataBaseSearch implements dataBaseSearchModule{
             while(rs.next()) {           	
             	plate = rs.getString("plate_number");
             	sta = rs.getString("state");
-            	id = rs.getString("license_number");
             }
             
             if(plate == null) {
@@ -128,7 +125,8 @@ public class DataBaseSearch implements dataBaseSearchModule{
             		if(rs.getInt("isWanted") == 1) {
             			vechicleInf.setWanted(true);
             		}
-            		vechicleInf.setVehicleType(Vehicle.VehicleType.valueOf("AUTO"));
+            		vechicleInf.setId(rs.getString("license_number"));
+            		vechicleInf.setVehicleType(VehicleType.valueOf("AUTO"));
             		String date = rs.getString("expirationdate");
             		vechicleInf.setYear(Year.parse(date.substring(0, 4)));
             		vechicleInf.setRegistrationDateExperation(rs.getDate("expirationdate"));
@@ -164,7 +162,7 @@ public class DataBaseSearch implements dataBaseSearchModule{
 	            Connection conn = DriverManager.getConnection(DB_URL,USER,PASS);
 	            Statement stmt = conn.createStatement();
 	            String sql;
-	            sql = "SELECT * FROM personalinformation WHERE license_number = 'G2519949'";
+	            sql = "SELECT license_number FROM personalinformation WHERE license_number = 'G2519949'";
 	            ResultSet rs = stmt.executeQuery(sql);
 	            String id = null;
 	            while(rs.next()) {
@@ -194,7 +192,7 @@ public class DataBaseSearch implements dataBaseSearchModule{
            
             stmt = conn.createStatement();
             String sql;
-            sql = "SELECT * FROM address a WHERE license_number = '" + id + "' AND"
+            sql = "SELECT license_number, region FROM address a WHERE license_number = '" + id + "' AND"
             											  + " region = '" + state + "'";
             ResultSet rs = stmt.executeQuery(sql);
             String sta = null;
