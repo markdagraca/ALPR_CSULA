@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="dist">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/OCRmodule/Tess4J/dist" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/OCRmodule/Tess4J/dist" recursive="false" />
+  </library>
+</component>
