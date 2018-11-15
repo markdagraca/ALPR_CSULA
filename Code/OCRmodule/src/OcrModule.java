@@ -17,27 +17,16 @@ public class OcrModule implements OpticalCharacterRecognition{
     public static void main(String[] args) {
         Profile profile = new Profile();
         profile.setFirstName("Mark ");
-//        File file1=new File("C:\\Users\\Mark D\\Dropbox\\School 2018-19\\Fall\\CS 3337\\ALPR_CSULA\\Sample Plates\\california_plate_bmw_330i-397000.png");
-//        File file2=new File("C:\\Users\\Mark D\\Dropbox\\School 2018-19\\Fall\\CS 3337\\ALPR_CSULA\\Sample Plates\\Car 1 Cropped.png");
-//        File file3=new File("C:\\Users\\Mark D\\Dropbox\\School 2018-19\\Fall\\CS 3337\\ALPR_CSULA\\Sample Plates\\2018-02-27 14.25.35.jpg");
-//        File file4=new File("C:\\Users\\Mark D\\Dropbox\\School 2018-19\\Fall\\CS 3337\\ALPR_CSULA\\Sample Plates\\ca2011-2.jpg");
-        File file5=new File("C:\\Users\\Mark D\\Dropbox\\School 2018-19\\Fall\\CS 3337\\ALPR_CSULA\\Sample Plates\\trump.jpg");
-//        File file6=new File("C:\\Users\\Mark D\\Dropbox\\School 2018-19\\Fall\\CS 3337\\ALPR_CSULA\\Sample Plates\\file 6.jpg");
-//        File file7=new File("C:\\Users\\Mark D\\Dropbox\\School 2018-19\\Fall\\CS 3337\\ALPR_CSULA\\Sample Plates\\034motorsport-metal-license-plate-frame-automotive-accessory-034-a03-0001-2.jpg");
-//        File file8=new File("C:\\Users\\Mark D\\Dropbox\\School 2018-19\\Fall\\CS 3337\\ALPR_CSULA\\Sample Plates\\ca2008-2.jpg");
-
+        File file1=new File("C:\\Users\\Mark D\\Dropbox\\School 2018-19\\Fall\\CS 3337\\ALPR_CSULA\\Sample Plates\\trump.jpg");
+        File file2=new File("C:\\Users\\Mark D\\Dropbox\\School 2018-19\\Fall\\CS 3337\\ALPR_CSULA\\Sample Plates\\ca2008-2.jpg");
+        File file3=new File("C:\\Users\\Mark D\\Dropbox\\School 2018-19\\Fall\\CS 3337\\ALPR_CSULA\\Sample Plates\\boring-california-6c.jpg");
 
         OcrModule mod=new OcrModule();
 
-//
-//        System.out.println( mod.findLicencePlateText(file1));
-//        System.out.println( mod.findLicencePlateText(file2));
-//        System.out.println( mod.findLicencePlateText(file3));
-//        System.out.println( mod.findLicencePlateText(file4));
-        System.out.println( mod.findLicencePlateText(file5));
-//        System.out.println( mod.findLicencePlateText(file6));
-//        System.out.println( mod.findLicencePlateText(file7));
-//        System.out.println( mod.findLicencePlateText(file8));
+        System.out.println( mod.findLicencePlateText(file1));
+        System.out.println( mod.findLicencePlateText(file2));
+        System.out.println( mod.findLicencePlateText(file3));
+
 
 //        mod.findLicencePlateText(file1);
 //        mod.findLicencePlateText(file2);
@@ -171,7 +160,7 @@ public class OcrModule implements OpticalCharacterRecognition{
     }
     private static BufferedImage cropImage(BufferedImage image)
     {
-        BufferedImage output=image.getSubimage(0, (int) (image.getHeight()*0.2), image.getWidth(), (int) (image.getHeight()*(0.8-0.2)));
+        BufferedImage output=image.getSubimage(0, (int) (image.getHeight()*0), image.getWidth(), (int) (image.getHeight()*(0.85)));
 
         return output;
 

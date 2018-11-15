@@ -4,12 +4,53 @@ import java.time.Year;
 import java.util.Date;
 
 public class Vehicle {
-    private String id,
-            vin,
-            make,
-            model,
-            ownerName,
-            wantedDescription;
+    private String id;
+    private String vin;
+    private String make;
+    private String model;
+    private String ownerName;
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getMake() {
+        return make;
+    }
+
+    public void setMake(String make) {
+        this.make = make;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public String getOwnerName() {
+        return ownerName;
+    }
+
+    public void setOwnerName(String ownerName) {
+        this.ownerName = ownerName;
+    }
+
+    public String getWantedDescription() {
+        return wantedDescription;
+    }
+
+    public void setWantedDescription(String wantedDescription) {
+        this.wantedDescription = wantedDescription;
+    }
+
+    private String wantedDescription;
 
 
 
