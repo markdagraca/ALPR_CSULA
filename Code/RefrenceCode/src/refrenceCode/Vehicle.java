@@ -4,12 +4,44 @@ import java.time.Year;
 import java.util.Date;
 
 public class Vehicle {
-    private String id;
+    private String id;//license plate
+    private String driverLicence_ID;
+    //driver license id if nothing is present then use owner name and address
+    // for example if it registered to a company then no background search needs to be done
     private String vin;
     private String make;
     private String model;
-    private String ownerName;
 
+    private String ownerName,legalOwnerName;
+    private String wantedDescription;
+    private Boolean isWanted;
+
+    private VehicleType vehicleType;
+    private Address owner_Address,legal_Owner_Address;
+    private Date registrationDateExperation;
+    private Year year;
+
+    public String getDriverLicence_ID() {
+        return driverLicence_ID;
+    }
+
+    public void setDriverLicence_ID(String driverLicence_ID) {
+        this.driverLicence_ID = driverLicence_ID;
+    }
+
+    public String getLegalOwnerName() {
+        return legalOwnerName;
+    }
+
+    public void setLegalOwnerName(String legalOwnerName) {
+        this.legalOwnerName = legalOwnerName;
+    }
+
+
+    public enum VehicleType{
+        AUTO,COMMERCIAL,MOTORCYCLE,OFF_HIGHWAY,TRAILER_COACH;
+
+    }
     public String getId() {
         return id;
     }
@@ -49,25 +81,6 @@ public class Vehicle {
     public void setWantedDescription(String wantedDescription) {
         this.wantedDescription = wantedDescription;
     }
-
-    private String wantedDescription;
-
-
-
-
-    public enum VehicleType{
-        AUTO,COMMERCIAL,MOTORCYCLE,OFF_HIGHWAY,TRAILER_COACH;
-
-    }
-    private VehicleType vehicleType;
-
-
-
-    private Address owner_Address,legal_Owner_Address;
-    private Boolean isWanted;
-    private Date registrationDateExperation;
-    private Year year;
-
 
 
     public String getVin() {

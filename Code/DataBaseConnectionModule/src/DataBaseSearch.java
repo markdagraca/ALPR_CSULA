@@ -17,6 +17,22 @@ public class DataBaseSearch implements dataBaseSearchModule{
     private String idNumber;
     private Address newAddress;
 
+    public static void main(String args[])
+	{
+
+		java.util.Date date=new java.util.Date();
+
+		DataBaseSearch test=new DataBaseSearch();
+		long start=0,end=0;
+		start=date.getTime();
+		System.out.println("Start "+start);
+		System.out.println(test.searchByPlate("F9445584",States.CA));
+		end=date.getTime();
+		System.out.println("End "+end);
+		System.out.println("Diff "+(end-start));
+
+
+	}
 	@Override
 	public Profile searchByName(String firstName, String middleName, String lastName, Address address) {
 		Connection conn = null;
@@ -126,7 +142,7 @@ public class DataBaseSearch implements dataBaseSearchModule{
             			vechicleInf.setWanted(true);
             		}
             		vechicleInf.setId(rs.getString("license_number"));
-            		vechicleInf.setVehicleType(VehicleType.valueOf("AUTO"));
+            		vechicleInf.setVehicleType(Vehicle.VehicleType.valueOf("AUTO"));
             		String date = rs.getString("expirationdate");
             		vechicleInf.setYear(Year.parse(date.substring(0, 4)));
             		vechicleInf.setRegistrationDateExperation(rs.getDate("expirationdate"));
