@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92bb9b28-199f-4510-ba0b-956a68551923" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/DataBaseConnectionModule/DataBaseConnectionModule.iml" afterPath="$PROJECT_DIR$/DataBaseConnectionModule/DataBaseConnectionModule.iml" />
       <change beforePath="$PROJECT_DIR$/DataBaseConnectionModule/src/DataBaseSearch.java" afterPath="$PROJECT_DIR$/DataBaseConnectionModule/src/DataBaseSearch.java" />
-      <change beforePath="$PROJECT_DIR$/OCRmodule/ca2008-2.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/OCRmodule/ij152-win-java8.zip" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/OCRmodule/jTessBoxEditor-master.zip" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/OCRmodule/qt-box-editor-dependecies-1.09.zip" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/OCRmodule/src/OcrModule.java" afterPath="$PROJECT_DIR$/OCRmodule/src/OcrModule.java" />
-      <change beforePath="$PROJECT_DIR$/RefrenceCode/src/refrenceCode/Vehicle.java" afterPath="$PROJECT_DIR$/RefrenceCode/src/refrenceCode/Vehicle.java" />
-      <change beforePath="$PROJECT_DIR$/out/production/OCRmodule/OcrModule.class" afterPath="$PROJECT_DIR$/out/production/OCRmodule/OcrModule.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/RefrenceCode/refrenceCode/Vehicle$VehicleType.class" afterPath="$PROJECT_DIR$/out/production/RefrenceCode/refrenceCode/Vehicle$VehicleType.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/RefrenceCode/refrenceCode/Vehicle.class" afterPath="$PROJECT_DIR$/out/production/RefrenceCode/refrenceCode/Vehicle.class" />
-      <change beforePath="$PROJECT_DIR$/output.jpg" afterPath="$PROJECT_DIR$/output.jpg" />
-      <change beforePath="$PROJECT_DIR$/../Sample Plates/034motorsport-metal-license-plate-frame-automotive-accessory-034-a03-0001-2.jpg" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -87,19 +74,19 @@
       <file leaf-file-name="DataBaseSearch.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DataBaseConnectionModule/src/DataBaseSearch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1180">
-              <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+            <state relative-caret-position="1711">
+              <caret line="29" column="65" lean-forward="true" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#9612#9619#0" expanded="true" />
-                <marker date="1542272088341" expanded="true" signature="986:1190" ph="SELECT * FRO... personalinformation" />
-                <marker date="1542272088341" expanded="true" signature="1803:2080" ph="SELECT * FRO... address" />
-                <marker date="1542272088341" expanded="true" signature="3606:3819" ph="SELECT * FRO... plateinformation" />
-                <marker date="1542272088341" expanded="true" signature="4368:4545" ph="SELECT * FRO... plateinformation" />
-                <marker date="1542272088341" expanded="true" signature="6141:6208" ph="SELECT * FRO... personalinformation" />
-                <marker date="1542272088341" expanded="true" signature="6965:7083" ph="SELECT * FRO... address" />
-                <marker date="1542272088341" expanded="true" signature="8051:8366" ph="SELECT * FRO... ownerinformation" />
-                <marker date="1542272088341" expanded="true" signature="9451:9512" ph="SELECT * FRO... crime" />
+                <element signature="e#9608#9615#0" expanded="true" />
+                <marker date="1542272286486" expanded="true" signature="982:1186" ph="SELECT * FRO... personalinformation" />
+                <marker date="1542272286486" expanded="true" signature="1799:2076" ph="SELECT * FRO... address" />
+                <marker date="1542272286486" expanded="true" signature="3602:3815" ph="SELECT * FRO... plateinformation" />
+                <marker date="1542272286486" expanded="true" signature="4364:4541" ph="SELECT * FRO... plateinformation" />
+                <marker date="1542272286486" expanded="true" signature="6137:6204" ph="SELECT * FRO... personalinformation" />
+                <marker date="1542272286486" expanded="true" signature="6961:7079" ph="SELECT * FRO... address" />
+                <marker date="1542272286486" expanded="true" signature="8047:8362" ph="SELECT * FRO... ownerinformation" />
+                <marker date="1542272286486" expanded="true" signature="9447:9508" ph="SELECT * FRO... crime" />
               </folding>
             </state>
           </provider>
@@ -225,7 +212,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-14" />
     <option name="width" value="2428" />
     <option name="height" value="2614" />
@@ -453,15 +440,15 @@
       <workItem from="1542077583649" duration="18865000" />
       <workItem from="1542150103308" duration="1501000" />
       <workItem from="1542249018830" duration="2699000" />
-      <workItem from="1542252628387" duration="1244000" />
+      <workItem from="1542252628387" duration="1601000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63693000" />
+    <option name="totallyTimeSpent" value="64050000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-16" y="-16" width="4832" height="2632" extended-state="6" />
+    <frame x="-16" y="-16" width="4832" height="2632" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1026,19 +1013,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DataBaseConnectionModule/src/DataBaseSearch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1180">
-          <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+        <state relative-caret-position="1711">
+          <caret line="29" column="65" lean-forward="true" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#9612#9619#0" expanded="true" />
-            <marker date="1542272088341" expanded="true" signature="986:1190" ph="SELECT * FRO... personalinformation" />
-            <marker date="1542272088341" expanded="true" signature="1803:2080" ph="SELECT * FRO... address" />
-            <marker date="1542272088341" expanded="true" signature="3606:3819" ph="SELECT * FRO... plateinformation" />
-            <marker date="1542272088341" expanded="true" signature="4368:4545" ph="SELECT * FRO... plateinformation" />
-            <marker date="1542272088341" expanded="true" signature="6141:6208" ph="SELECT * FRO... personalinformation" />
-            <marker date="1542272088341" expanded="true" signature="6965:7083" ph="SELECT * FRO... address" />
-            <marker date="1542272088341" expanded="true" signature="8051:8366" ph="SELECT * FRO... ownerinformation" />
-            <marker date="1542272088341" expanded="true" signature="9451:9512" ph="SELECT * FRO... crime" />
+            <element signature="e#9608#9615#0" expanded="true" />
+            <marker date="1542272286486" expanded="true" signature="982:1186" ph="SELECT * FRO... personalinformation" />
+            <marker date="1542272286486" expanded="true" signature="1799:2076" ph="SELECT * FRO... address" />
+            <marker date="1542272286486" expanded="true" signature="3602:3815" ph="SELECT * FRO... plateinformation" />
+            <marker date="1542272286486" expanded="true" signature="4364:4541" ph="SELECT * FRO... plateinformation" />
+            <marker date="1542272286486" expanded="true" signature="6137:6204" ph="SELECT * FRO... personalinformation" />
+            <marker date="1542272286486" expanded="true" signature="6961:7079" ph="SELECT * FRO... address" />
+            <marker date="1542272286486" expanded="true" signature="8047:8362" ph="SELECT * FRO... ownerinformation" />
+            <marker date="1542272286486" expanded="true" signature="9447:9508" ph="SELECT * FRO... crime" />
           </folding>
         </state>
       </provider>

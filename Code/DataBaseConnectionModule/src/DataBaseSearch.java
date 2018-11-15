@@ -18,7 +18,7 @@ public class DataBaseSearch implements dataBaseSearchModule{
 
 
 
-    
+
 	@Override
 	public Profile searchByName(String firstName, String middleName, String lastName, Address address) {
 		Connection conn = null;
