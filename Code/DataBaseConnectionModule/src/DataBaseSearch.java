@@ -33,7 +33,7 @@ public class DataBaseSearch implements dataBaseSearchModule{
 
 
 	}
-	@Override
+    @Override
 	public Profile searchByName(String firstName, String middleName, String lastName, Address address) {
 		Connection conn = null;
         Statement stmt = null;
@@ -65,7 +65,7 @@ public class DataBaseSearch implements dataBaseSearchModule{
             String state = null;
             int zipCode = 0;
             if(id != null) {
-            	sql = "SELECT address, city, region, postalcode FROM address WHERE address = '" + address.getStreet() + "' AND "
+            	sql = "SELECT address, city, region, postalcode FROM personalinformation WHERE address = '" + address.getStreet() + "' AND "
             										+ "city = '" + address.getCity() + "' AND "
             										+ "region = '" + address.getState() + "' AND "
             										+ "postalcode = '" + address.getZipcode() + "'";
@@ -115,16 +115,16 @@ public class DataBaseSearch implements dataBaseSearchModule{
 
             stmt = conn.createStatement();
             String sql;
-            sql = "SELECT plate_number, state FROM plateinformation a INNER JOIN address b" + 
-            		" on a.license_number = b.license_number WHERE plate_number = '" + plateNumber + "' AND"
+            sql = "SELECT license_number,plate_number, state FROM plateinformation WHERE plate_number = '" + plateNumber + "' AND"
             											  + " state = '" + state + "'";
             ResultSet rs = stmt.executeQuery(sql);
             String plate = null;
             String sta = null;
             String id = null;
-            while(rs.next()) {           	
+            while(rs.next()) {
+            	id = rs.getString("license_number");
             	plate = rs.getString("plate_number");
-            	sta = rs.getString("state");
+            	sta = rs.getString("state");           	
             }
             
             if(plate == null) {
@@ -133,8 +133,7 @@ public class DataBaseSearch implements dataBaseSearchModule{
 
             if(plate.equals(plateNumber) && sta.equals(state + ""))             
             {
-            	sql = "SELECT * FROM plateinformation a INNER JOIN address b ON a.license_number  = b.license_number WHERE plate_number = '" + plateNumber + "' AND"
-						  + " state = '" + state + "'";
+            	sql = "SELECT * FROM plateinformation a INNER JOIN personalinformation b ON a.license_number  = b.license_number WHERE a.license_number = '" + id + "'";
             	rs = stmt.executeQuery(sql);
             	while(rs.next()) {           	
             		vechicleInf.setVin(rs.getString("vin"));
@@ -142,7 +141,7 @@ public class DataBaseSearch implements dataBaseSearchModule{
             			vechicleInf.setWanted(true);
             		}
             		vechicleInf.setId(rs.getString("license_number"));
-            		vechicleInf.setVehicleType(Vehicle.VehicleType.valueOf("AUTO"));
+            		vechicleInf.setVehicleType(VehicleType.valueOf("AUTO"));
             		String date = rs.getString("expirationdate");
             		vechicleInf.setYear(Year.parse(date.substring(0, 4)));
             		vechicleInf.setRegistrationDateExperation(rs.getDate("expirationdate"));
@@ -208,7 +207,7 @@ public class DataBaseSearch implements dataBaseSearchModule{
            
             stmt = conn.createStatement();
             String sql;
-            sql = "SELECT license_number, region FROM address a WHERE license_number = '" + id + "' AND"
+            sql = "SELECT license_number, region FROM personalinformation WHERE license_number = '" + id + "' AND"
             											  + " region = '" + state + "'";
             ResultSet rs = stmt.executeQuery(sql);
             String sta = null;
@@ -247,10 +246,7 @@ public class DataBaseSearch implements dataBaseSearchModule{
         stmt = conn.createStatement();
         String sql;
 
-		sql = "SELECT * FROM ownerinformation a INNER JOIN personalinformation b ON a.license_number = b.license_number"
-    			+ " INNER JOIN address c ON b.license_number = c.license_number" 
-    			+ " INNER JOIN plateinformation d ON c.license_number = d.license_number" 
-    			+ " WHERE a.license_number = '" + idNumber + "'";
+		sql = "SELECT * FROM personalinformation a INNER JOIN plateinformation b ON a.license_number = b.license_number WHERE a.license_number = '" + idNumber + "'";
 		ResultSet rs = stmt.executeQuery(sql);
     	rs = stmt.executeQuery(sql);
 
