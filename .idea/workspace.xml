@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9b7ed04-d36e-45de-9649-e17f152f3a16" name="Default" comment="" />
+    <list default="true" id="b9b7ed04-d36e-45de-9649-e17f152f3a16" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/Code/.idea/libraries/commons_beanutils_1_9_2.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Code/.idea/workspace.xml" afterPath="$PROJECT_DIR$/Code/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Code/Code.iml" afterPath="$PROJECT_DIR$/Code/Code.iml" />
+      <change beforePath="$PROJECT_DIR$/Code/OCRmodule/OCRmodule.iml" afterPath="$PROJECT_DIR$/Code/OCRmodule/OCRmodule.iml" />
+      <change beforePath="$PROJECT_DIR$/Code/out/production/Code/refrenceCode/Address.class" afterPath="$PROJECT_DIR$/Code/out/production/Code/refrenceCode/Address.class" />
+      <change beforePath="$PROJECT_DIR$/Code/out/production/Code/refrenceCode/CaseStatus.class" afterPath="$PROJECT_DIR$/Code/out/production/Code/refrenceCode/CaseStatus.class" />
+      <change beforePath="$PROJECT_DIR$/Code/out/production/Code/refrenceCode/Citizen.class" afterPath="$PROJECT_DIR$/Code/out/production/Code/refrenceCode/Citizen.class" />
+      <change beforePath="$PROJECT_DIR$/Code/out/production/Code/refrenceCode/Crime.class" afterPath="$PROJECT_DIR$/Code/out/production/Code/refrenceCode/Crime.class" />
+      <change beforePath="$PROJECT_DIR$/Code/out/production/Code/refrenceCode/OpticalCharacterRecognition.class" afterPath="$PROJECT_DIR$/Code/out/production/Code/refrenceCode/OpticalCharacterRecognition.class" />
+      <change beforePath="$PROJECT_DIR$/Code/out/production/Code/refrenceCode/Profile.class" afterPath="$PROJECT_DIR$/Code/out/production/Code/refrenceCode/Profile.class" />
+      <change beforePath="$PROJECT_DIR$/Code/out/production/Code/refrenceCode/States.class" afterPath="$PROJECT_DIR$/Code/out/production/Code/refrenceCode/States.class" />
+      <change beforePath="$PROJECT_DIR$/Code/out/production/Code/refrenceCode/Vehicle$VehicleType.class" afterPath="$PROJECT_DIR$/Code/out/production/Code/refrenceCode/Vehicle$VehicleType.class" />
+      <change beforePath="$PROJECT_DIR$/Code/out/production/Code/refrenceCode/Vehicle.class" afterPath="$PROJECT_DIR$/Code/out/production/Code/refrenceCode/Vehicle.class" />
+      <change beforePath="$PROJECT_DIR$/Code/out/production/Code/refrenceCode/dataBaseSearchModule.class" afterPath="$PROJECT_DIR$/Code/out/production/Code/refrenceCode/dataBaseSearchModule.class" />
+      <change beforePath="$PROJECT_DIR$/Code/out/production/Code/refrenceCode/objectRecognitionModule.class" afterPath="$PROJECT_DIR$/Code/out/production/Code/refrenceCode/objectRecognitionModule.class" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +41,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-11" />
+    <option name="x" value="1909" />
     <option name="width" value="1942" />
     <option name="height" value="2091" />
   </component>
@@ -46,15 +63,15 @@
     <panes>
       <pane id="AndroidView" />
       <pane id="ProjectPane" />
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Code" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RunDashboard">
@@ -167,11 +184,13 @@
       <updated>1541243511589</updated>
       <workItem from="1541243513222" duration="51000" />
       <workItem from="1541243765123" duration="51000" />
+      <workItem from="1541644447720" duration="850000" />
+      <workItem from="1541647613018" duration="27000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102000" />
+    <option name="totallyTimeSpent" value="979000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-13" y="-13" width="3866" height="2106" extended-state="6" />
@@ -189,7 +208,7 @@
       <window_info id="Flutter Outline" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25293177" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25879532" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
