@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component inherit-compiler-output="true" inheritJdk="true">
+	<output-test url="file://$MODULE_DIR$/../out/test/OCRmodule"/>
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$"/>
+	<lib name="dist" scope="COMPILE">
+		<relative-module-cls project-related="file://$PROJECT_DIR$/OCRmodule/Tess4J/dist"/>
+		<relative-module-cls project-related="file://$PROJECT_DIR$/OCRmodule/Tess4J/lib"/>
+		<relative-module-cls project-related="file://$PROJECT_DIR$/OCRmodule/Tess4J/dist"/>
+		<relative-module-cls project-related="file://$PROJECT_DIR$/OCRmodule/Tess4J/lib"/>
+	</lib>
+</component>

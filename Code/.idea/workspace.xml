@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="92bb9b28-199f-4510-ba0b-956a68551923" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/RefrenceCode/src/refrenceCode/objectRecognitionModule.java" afterPath="$PROJECT_DIR$/RefrenceCode/src/refrenceCode/objectRecognitionModule.java" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$2.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$3.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$4.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$5.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$6.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$7.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$8.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$Function.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/alpr/ALPR.class" afterPath="" />
-    </list>
+    <list default="true" id="92bb9b28-199f-4510-ba0b-956a68551923" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -85,8 +72,8 @@
       <file leaf-file-name="DataBaseSearch.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DataBaseConnectionModule/src/DataBaseSearch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-809">
-              <caret line="27" column="43" lean-forward="true" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
+            <state relative-caret-position="1081">
+              <caret line="27" column="43" lean-forward="false" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#searchByPlate#0;class#DataBaseSearch#0" expanded="false" />
@@ -103,8 +90,8 @@
       <file leaf-file-name="LicenseInformation.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DataBaseConnectionModule/LicenseInformation.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="944">
-              <caret line="82" column="18" lean-forward="true" selection-start-line="82" selection-start-column="18" selection-end-line="82" selection-end-column="18" />
+            <state relative-caret-position="3854">
+              <caret line="82" column="18" lean-forward="false" selection-start-line="82" selection-start-column="18" selection-end-line="82" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -113,8 +100,8 @@
       <file leaf-file-name="objectRecognitionModule.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/RefrenceCode/src/refrenceCode/objectRecognitionModule.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="470">
-              <caret line="10" column="52" lean-forward="true" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
+            <state relative-caret-position="611">
+              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -157,7 +144,7 @@
       <file leaf-file-name="OcrModule.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/OCRmodule/src/OcrModule.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="705">
+            <state relative-caret-position="2820">
               <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -288,8 +275,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -335,6 +322,11 @@
             <path>
               <item name="Code" type="b2602c69:ProjectViewProjectNode" />
               <item name="Code" type="462c0819:PsiDirectoryNode" />
+              <item name="ObjectRecognitionModule" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
               <item name="OCRmodule" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -369,8 +361,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -541,6 +533,7 @@
       <workItem from="1542279859944" duration="451000" />
       <workItem from="1543286429372" duration="1606000" />
       <workItem from="1543288737364" duration="494000" />
+      <workItem from="1543289363948" duration="281000" />
     </task>
     <task id="LOCAL-00001" summary="Database test">
       <created>1542280243153</created>
@@ -553,10 +546,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70291000" />
+    <option name="totallyTimeSpent" value="70572000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-13" y="-13" width="3866" height="2106" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -571,7 +565,7 @@
       <window_info id="Flutter Outline" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10527719" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.106343284" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298687" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -739,7 +733,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -856,7 +849,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1011,7 +1003,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="94">
           <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1134,8 +1125,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DataBaseConnectionModule/src/DataBaseSearch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-809">
-          <caret line="27" column="43" lean-forward="true" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
+        <state relative-caret-position="1081">
+          <caret line="27" column="43" lean-forward="false" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#searchByPlate#0;class#DataBaseSearch#0" expanded="false" />
@@ -1150,15 +1141,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DataBaseConnectionModule/LicenseInformation.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="944">
-          <caret line="82" column="18" lean-forward="true" selection-start-line="82" selection-start-column="18" selection-end-line="82" selection-end-column="18" />
+        <state relative-caret-position="3854">
+          <caret line="82" column="18" lean-forward="false" selection-start-line="82" selection-start-column="18" selection-end-line="82" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/OCRmodule/src/OcrModule.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
+        <state relative-caret-position="2820">
           <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1169,8 +1160,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/RefrenceCode/src/refrenceCode/objectRecognitionModule.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="10" column="52" lean-forward="true" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
+        <state relative-caret-position="611">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
         </state>
       </provider>
