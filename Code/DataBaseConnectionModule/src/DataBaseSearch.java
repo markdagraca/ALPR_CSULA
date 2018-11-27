@@ -141,7 +141,7 @@ public class DataBaseSearch implements dataBaseSearchModule{
             			vechicleInf.setWanted(true);
             		}
             		vechicleInf.setId(rs.getString("license_number"));
-            		vechicleInf.setVehicleType(VehicleType.valueOf("AUTO"));
+            		vechicleInf.setVehicleType(Vehicle.VehicleType.valueOf("AUTO"));
             		String date = rs.getString("expirationdate");
             		vechicleInf.setYear(Year.parse(date.substring(0, 4)));
             		vechicleInf.setRegistrationDateExperation(rs.getDate("expirationdate"));
