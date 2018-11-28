@@ -14,6 +14,7 @@ import java.util.ArrayList;
 
 public class OcrModule implements OpticalCharacterRecognition{
 
+
     public static void main(String[] args) {
         Profile profile = new Profile();
         profile.setFirstName("Mark ");
