@@ -71,7 +71,7 @@ CREATE TABLE crime
 (
 	license_number VARCHAR(20) PRIMARY KEY,
 	sexoffender INT,
-	felonyconviction INT,
+	felonyconviction INT,C5215770
 	dvcharge INT,
 	dvconviction INT,
 	ncicwant INT,
