@@ -56,6 +56,7 @@
       -javadoc-build:           Javadoc generation
       test-report:              JUnit report generation
 
+
     An example of overriding the target for project execution could look like this:
 
         <target name="run" depends="ALPR-impl.jar">
@@ -70,4 +71,5 @@
     nbproject/build-impl.xml file. 
 
     -->
+
 </project>
