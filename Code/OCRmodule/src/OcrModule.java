@@ -18,9 +18,9 @@ public class OcrModule implements OpticalCharacterRecognition{
     public static void main(String[] args) {
         Profile profile = new Profile();
         profile.setFirstName("Mark ");
-        File file1=new File("..\\Sample Plates\\trump.jpg");
-        File file2=new File("..\\Sample Plates\\ca2008-2.jpg");
-        File file3=new File("..\\Sample Plates\\boring-california-6c.jpg");
+        File file1=new File("C:\\Users\\Mark D\\Dropbox\\School 2018-19\\Fall\\CS 3337\\ALPR_CSULA\\Sample Plates\\trump.jpg");
+        File file2=new File("C:\\Users\\Mark D\\Dropbox\\School 2018-19\\Fall\\CS 3337\\ALPR_CSULA\\Sample Plates\\ca2008-2.jpg");
+        File file3=new File("C:\\Users\\Mark D\\Dropbox\\School 2018-19\\Fall\\CS 3337\\ALPR_CSULA\\Sample Plates\\boring-california-6c.jpg");
 
         OcrModule mod=new OcrModule();
 
