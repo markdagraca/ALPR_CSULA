@@ -5,6 +5,7 @@
     <archive path="C:/Users/Mark D/Dropbox/School 2018-19/Fall/CS 3337/ALPR_CSULA/Code/OCRmodule/Tess4J/dist/tess4j-3.4.8.jar" />
   </library>
   <library name="lib">
+    <archive path="C:/Users/Mark D/Dropbox/School 2018-19/Fall/CS 3337/ALPR_CSULA/Code/OCRmodule/Tess4J/dist/tess4j-3.4.8.jar" />
     <archive path="C:/Users/Mark D/Dropbox/School 2018-19/Fall/CS 3337/ALPR_CSULA/Code/OCRmodule/Tess4J/lib/jna-4.1.0.jar" />
     <archive path="C:/Users/Mark D/Dropbox/School 2018-19/Fall/CS 3337/ALPR_CSULA/Code/OCRmodule/Tess4J/lib/junit-4.12.jar" />
     <archive path="C:/Users/Mark D/Dropbox/School 2018-19/Fall/CS 3337/ALPR_CSULA/Code/OCRmodule/Tess4J/lib/itext-2.1.7.jar" />
@@ -28,7 +29,9 @@
     <archive path="C:/Users/Mark D/Dropbox/School 2018-19/Fall/CS 3337/ALPR_CSULA/Code/OCRmodule/Tess4J/lib/commons-beanutils-1.9.2.jar" />
     <archive path="C:/Users/Mark D/Dropbox/School 2018-19/Fall/CS 3337/ALPR_CSULA/Code/OCRmodule/Tess4J/lib/log4j-over-slf4j-1.7.25.jar" />
     <archive path="C:/Users/Mark D/Dropbox/School 2018-19/Fall/CS 3337/ALPR_CSULA/Code/OCRmodule/Tess4J/lib/xmlgraphics-commons-1.5.jar" />
-    <archive path="C:/Users/Mark D/Dropbox/School 2018-19/Fall/CS 3337/ALPR_CSULA/Code/OCRmodule/Tess4J/dist/tess4j-3.4.8.jar" />
+  </library>
+  <library name="opencv-343">
+    <archive path="C:/Users/Mark D/Dropbox/School 2018-19/Fall/CS 3337/ALPR_CSULA/Code/ObjectRecognitionModule/opencv-344.jar" />
   </library>
   <library name="lib" />
 </eclipse-userlibraries>

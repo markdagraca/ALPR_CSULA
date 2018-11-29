@@ -3,4 +3,7 @@
 	<output-test url="file://$MODULE_DIR$/../out/test/ObjectRecognitionModule"/>
 	<exclude-output/>
 	<contentEntry url="file://$MODULE_DIR$"/>
+	<levels>
+		<level name="opencv-343" value="project"/>
+	</levels>
 </component>

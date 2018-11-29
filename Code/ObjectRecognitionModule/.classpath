@@ -2,5 +2,9 @@
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="output" path="/out/production/ObjectRecognitionModule"/>
+	<classpathentry kind="src" path="x64"/>
+	<classpathentry kind="src" path="x86"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/RefrenceCode"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/opencv-343"/>
+	<classpathentry kind="output" path="bin"/>
 </classpath>
