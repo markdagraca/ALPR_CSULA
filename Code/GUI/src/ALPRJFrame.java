@@ -1,3 +1,7 @@
+import refrenceCode.Profile;
+import refrenceCode.States;
+import refrenceCode.Vehicle;
+
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import java.awt.*;
@@ -531,6 +535,8 @@ public class ALPRJFrame extends javax.swing.JFrame {
         String path = f.getAbsolutePath();
         lbl_image.setIcon(ResizeImage(path, null));
         ImgPath = image;
+
+
         
         
     }//GEN-LAST:event_selectActionPerformed
@@ -562,21 +568,13 @@ public class ALPRJFrame extends javax.swing.JFrame {
 
     private void enterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_enterActionPerformed
         // TODO add your handling code here:
-        Function f = new Function();
-        ResultSet rs = null;
- 
-        rs = f.find(Pnumber.getText());
-        try{
-          if(rs.next()){
-              TF_fname.setText(rs.getString("ArtistName"));
-              TF_lname.setText(rs.getString("City"));
-          }
-          else{
-              JOptionPane.showMessageDialog(null, "NO DATA FOR THIS ID");
-          }
-        }catch(Exception ex){
-               JOptionPane.showMessageDialog(null, ex.getMessage());
-                }
+        DataBaseSearch test=new DataBaseSearch();
+        Vehicle car=test.searchByPlate("SCRWOIL", States.CA);
+        Profile owner=test.searchByID(car.getDriverLicence_ID(),States.CA);
+
+              TF_fname.setText(car.getOwner_Address().getCity());
+              TF_lname.setText(owner.getLastName());
+
     }//GEN-LAST:event_enterActionPerformed
 
     private void addressActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addressActionPerformed

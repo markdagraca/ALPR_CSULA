@@ -2,8 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9b7ed04-d36e-45de-9649-e17f152f3a16" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Code/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Code/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/DataBaseConnectionModule/LicenseInformation.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Code/DataBaseConnectionModule/LicenseInformation.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/GUI/src/ALPRJFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/Code/GUI/src/ALPRJFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/out/production/GUI/ALPRJFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Code/out/production/GUI/ALPRJFrame$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/out/production/GUI/ALPRJFrame$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/Code/out/production/GUI/ALPRJFrame$10.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/out/production/GUI/ALPRJFrame$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/Code/out/production/GUI/ALPRJFrame$11.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/out/production/GUI/ALPRJFrame$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/Code/out/production/GUI/ALPRJFrame$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/out/production/GUI/ALPRJFrame$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/Code/out/production/GUI/ALPRJFrame$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/out/production/GUI/ALPRJFrame$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/Code/out/production/GUI/ALPRJFrame$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/out/production/GUI/ALPRJFrame$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/Code/out/production/GUI/ALPRJFrame$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/out/production/GUI/ALPRJFrame$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/Code/out/production/GUI/ALPRJFrame$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/out/production/GUI/ALPRJFrame$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/Code/out/production/GUI/ALPRJFrame$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/out/production/GUI/ALPRJFrame$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/Code/out/production/GUI/ALPRJFrame$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/out/production/GUI/ALPRJFrame$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/Code/out/production/GUI/ALPRJFrame$9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/out/production/GUI/ALPRJFrame$Function.class" beforeDir="false" afterPath="$PROJECT_DIR$/Code/out/production/GUI/ALPRJFrame$Function.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/out/production/GUI/ALPRJFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/Code/out/production/GUI/ALPRJFrame.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +53,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="952" />
     <option name="width" value="977" />
     <option name="height" value="1038" />
@@ -59,7 +73,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543460481542" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543461307489" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Code" />
     <property name="show.migrate.to.gradle.popup" value="false" />
@@ -159,8 +173,7 @@
     <option name="totallyTimeSpent" value="3161000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2785235" />
       <window_info id="Structure" order="1" weight="0.24966443" />
