@@ -1,5 +1,3 @@
-package application;
-
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
@@ -21,26 +19,32 @@ import org.opencv.imgproc.Imgproc;
  * Object Recognition
  * Base image is used as an input, and a file object that references the cropped image is returned.
  */
-public class ObjectRecognition implements objectRecognitionModule {
+public class ObjectRecognition implements application.objectRecognitionModule {
 	private File highlight = null;
 	
 	public static void main(String[] args){
-		String path = "C:/Users/rpera/Documents/Cal State LA/2018-2019/Fall Semester 2018/CS 3337/Sample_Images/image_1.jpg";
+		String path = "../Sample Plates/image_1.jpg";
 		ObjectRecognition or = new ObjectRecognition();
 		File image = new File(path);
-		File cropped = or.findLicensePlateInImage(image);
-		try{
-			File high = or.getHighlight();
-			String x = cropped.getAbsolutePath();
-			String y = high.getAbsolutePath();
-			System.out.println("Input Image: " + path);
-			System.out.println("Cropped Image: " + x);
-			System.out.println("Highlighted Image: " + y);
+		System.out.println(image.getAbsolutePath());
+		if(image.exists())
+		{
+			File cropped = or.findLicensePlateInImage(image);
+
+			try{
+				File high = or.getHighlight();
+				String x = cropped.getAbsolutePath();
+				String y = high.getAbsolutePath();
+				System.out.println("Input Image: " + path);
+				System.out.println("Cropped Image: " + x);
+				System.out.println("Highlighted Image: " + y);
+			}
+			catch(NullPointerException e){
+				System.out.println("Null Pointer Exception");
+				System.out.println("FindLicensePlateInImage has failed to detect a license plate.");
+			}
 		}
-		catch(NullPointerException e){
-			System.out.println("Null Pointer Exception");
-			System.out.println("FindLicensePlateInImage has failed to detect a license plate.");
-		}	
+
 	}
 	
 	@Override
@@ -87,14 +91,14 @@ public class ObjectRecognition implements objectRecognitionModule {
 		    	if (rect.width >= rect.height *1.8 && rect.width <= rect.height *2.2){
 		    		//Creating the highlighted image
 		    		Imgproc.rectangle(h, new Point(rect.x,rect.y), new Point(rect.x+rect.width,rect.y+rect.height),new Scalar(0,0,255),5);
-		    		String pathH  = "C:/Users/rpera/Documents/Cal State LA/2018-2019/Fall Semester 2018/CS 3337/Cropped_Output/highlight.jpg";
+		    		String pathH  = "../highlight.jpg";
 		    		Imgcodecs.imwrite(pathH,h);
 		    		highlight = new File(pathH);
 
 		    		//Cropping the license plate
 		    		Mat crop = new Mat(imageMat, rect);
 		    		Imgproc.rectangle(imageMat, new Point(rect.x,rect.y), new Point(rect.x+rect.width,rect.y+rect.height),new Scalar(0,0,255));
-		    		String path2  = "C:/Users/rpera/Documents/Cal State LA/2018-2019/Fall Semester 2018/CS 3337/Cropped_Output/cropped_plate.jpg";
+		    		String path2  = "../cropped_plate.jpg";
 		    		Imgcodecs.imwrite(path2,crop);
 		    		File f = new File(path2);
 		    		plate = f;
