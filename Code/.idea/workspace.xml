@@ -5,22 +5,13 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GUI/src/ALPRJFrame.form" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/src/ALPRJFrame.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GUI/src/ALPRJFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/src/ALPRJFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$10.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$11.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$11.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$Function.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$Function.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ObjectRecognitionModule/opencv_java331.dll" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ObjectRecognitionModule/opencv_java331.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ObjectRecognitionModule/opencv_java344.dll" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ObjectRecognitionModule/opencv_java344.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cropped_plate.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../cropped_plate.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../highlight.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../highlight.jpg" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,8 +38,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GUI/src/ALPRJFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="516" lean-forward="true" selection-start-line="516" selection-end-line="516" />
+            <state relative-caret-position="174">
+              <caret line="605" column="30" lean-forward="true" selection-start-line="605" selection-start-column="30" selection-end-line="605" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#700#701#0" expanded="true" />
@@ -71,8 +62,10 @@
                 <element signature="e#8087#8088#0" expanded="true" />
                 <element signature="e#8409#8410#0" expanded="true" />
                 <element signature="e#8468#8469#0" expanded="true" />
-                <element signature="e#9036#9037#0" expanded="true" />
-                <element signature="e#9097#9098#0" expanded="true" />
+                <element signature="e#8837#8838#0" expanded="true" />
+                <element signature="e#8894#8895#0" expanded="true" />
+                <element signature="e#9266#9267#0" expanded="true" />
+                <element signature="e#9327#9328#0" expanded="true" />
                 <element signature="e#33805#33892#0" expanded="true" />
               </folding>
             </state>
@@ -86,6 +79,9 @@
       <find>ind</find>
       <find>ImgPath</find>
       <find>File image</find>
+      <find>vin</find>
+      <find>clear</find>
+      <find>select</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -101,7 +97,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="951" />
     <option name="width" value="978" />
     <option name="height" value="1039" />
@@ -269,7 +265,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9141000" />
+    <option name="totallyTimeSpent" value="10635000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -385,8 +381,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/GUI/src/ALPRJFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="516" lean-forward="true" selection-start-line="516" selection-end-line="516" />
+        <state relative-caret-position="174">
+          <caret line="605" column="30" lean-forward="true" selection-start-line="605" selection-start-column="30" selection-end-line="605" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#700#701#0" expanded="true" />
@@ -409,8 +405,10 @@
             <element signature="e#8087#8088#0" expanded="true" />
             <element signature="e#8409#8410#0" expanded="true" />
             <element signature="e#8468#8469#0" expanded="true" />
-            <element signature="e#9036#9037#0" expanded="true" />
-            <element signature="e#9097#9098#0" expanded="true" />
+            <element signature="e#8837#8838#0" expanded="true" />
+            <element signature="e#8894#8895#0" expanded="true" />
+            <element signature="e#9266#9267#0" expanded="true" />
+            <element signature="e#9327#9328#0" expanded="true" />
             <element signature="e#33805#33892#0" expanded="true" />
           </folding>
         </state>
