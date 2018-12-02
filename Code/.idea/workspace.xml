@@ -3,12 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="2b89a2ba-f637-45d0-aaaa-ead881db8ae3" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/GUI/ALPRJFrame.java" afterPath="$PROJECT_DIR$/GUI/ALPRJFrame.java" />
       <change beforePath="$PROJECT_DIR$/OCRmodule/src/OcrModule.java" afterPath="$PROJECT_DIR$/OCRmodule/src/OcrModule.java" />
       <change beforePath="$PROJECT_DIR$/ObjectRecognitionModule/src/ObjectRecognition.java" afterPath="$PROJECT_DIR$/ObjectRecognitionModule/src/ObjectRecognition.java" />
       <change beforePath="$PROJECT_DIR$/out/production/OCRmodule/OcrModule.class" afterPath="$PROJECT_DIR$/out/production/OCRmodule/OcrModule.class" />
       <change beforePath="$PROJECT_DIR$/out/production/ObjectRecognitionModule/ObjectRecognition.class" afterPath="$PROJECT_DIR$/out/production/ObjectRecognitionModule/ObjectRecognition.class" />
-      <change beforePath="$PROJECT_DIR$/output.jpg" afterPath="$PROJECT_DIR$/output.jpg" />
       <change beforePath="$PROJECT_DIR$/../cropped_plate.jpg" afterPath="$PROJECT_DIR$/../cropped_plate.jpg" />
       <change beforePath="$PROJECT_DIR$/../highlight.jpg" afterPath="$PROJECT_DIR$/../highlight.jpg" />
     </list>
@@ -25,8 +23,8 @@
       <file leaf-file-name="ObjectRecognition.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ObjectRecognitionModule/src/ObjectRecognition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-940">
-              <caret line="26" column="47" lean-forward="false" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
+            <state relative-caret-position="235">
+              <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
               <folding>
                 <element signature="e#2698#2710#0" expanded="true" />
                 <element signature="e#4296#4297#0" expanded="true" />
@@ -81,8 +79,8 @@
       <file leaf-file-name="OcrModule.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/OCRmodule/src/OcrModule.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="171" column="5" lean-forward="true" selection-start-line="171" selection-start-column="5" selection-end-line="171" selection-end-column="5" />
+            <state relative-caret-position="449">
+              <caret line="120" column="0" lean-forward="true" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -354,12 +352,12 @@
       <option name="presentableId" value="Default" />
       <updated>1543652061384</updated>
       <workItem from="1543652067796" duration="1844000" />
-      <workItem from="1543707550090" duration="2736000" />
+      <workItem from="1543707550090" duration="3891000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4580000" />
+    <option name="totallyTimeSpent" value="5735000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-13" y="-13" width="3866" height="2106" extended-state="6" />
@@ -407,15 +405,9 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/OCRmodule/src/OcrModule.java</url>
-          <line>124</line>
+          <line>121</line>
           <properties />
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/OCRmodule/src/OcrModule.java</url>
-          <line>122</line>
-          <properties />
-          <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/OCRmodule/src/OcrModule.java</url>
@@ -508,8 +500,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ObjectRecognitionModule/src/ObjectRecognition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-940">
-          <caret line="26" column="47" lean-forward="false" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
+        <state relative-caret-position="235">
+          <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
           <folding>
             <element signature="e#2698#2710#0" expanded="true" />
             <element signature="e#4296#4297#0" expanded="true" />
@@ -520,8 +512,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/OCRmodule/src/OcrModule.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="171" column="5" lean-forward="true" selection-start-line="171" selection-start-column="5" selection-end-line="171" selection-end-column="5" />
+        <state relative-caret-position="449">
+          <caret line="120" column="0" lean-forward="true" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
           <folding />
         </state>
       </provider>

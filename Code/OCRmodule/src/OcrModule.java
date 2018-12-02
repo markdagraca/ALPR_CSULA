@@ -118,10 +118,7 @@ public class OcrModule implements OpticalCharacterRecognition{
             }
             returnString=returnString.trim();
             returnString=returnString.replaceAll(" ","");
-            if(returnString.length()==7)
-            {
-                returnString=returnString.replaceAll("T","7");
-            }
+
             return returnString;
 
 

@@ -24,7 +24,7 @@ public class ObjectRecognition implements application.objectRecognitionModule {
 	
 	public static void main(String[] args){
 
-		String path = "../Sample Plates/image_7.jpg";
+		String path = "../Sample Plates/image_1.jpg";
 		ObjectRecognition or = new ObjectRecognition();
 		File image = new File(path);
 		System.out.println(image.getAbsolutePath());
