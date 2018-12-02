@@ -16,26 +16,18 @@ public class OcrModule implements OpticalCharacterRecognition{
 
 
     public static void main(String[] args) {
-        Profile profile = new Profile();
-        profile.setFirstName("Mark ");
         File file1=new File("..\\Sample Plates\\trump.jpg");
         File file2=new File("..\\Sample Plates\\ca2008-2.jpg");
         File file3=new File("..\\Sample Plates\\boring-california-6c.jpg");
+        File file4=new File("..\\Sample Plates\\cropped_plate.jpg");
 
         OcrModule mod=new OcrModule();
 
         System.out.println( mod.findLicencePlateText(file1));
         System.out.println( mod.findLicencePlateText(file2));
         System.out.println( mod.findLicencePlateText(file3));
+        System.out.println( mod.findLicencePlateText(file4));
 
-
-//        mod.findLicencePlateText(file1);
-//        mod.findLicencePlateText(file2);
-//        mod.findLicencePlateText(file3);
-//        mod.findLicencePlateText(file4);
-//        mod.findLicencePlateText(file5);
-//        mod.findLicencePlateText(file6);
-//        mod.findLicencePlateText(file7);
 
 
 
@@ -55,15 +47,14 @@ public class OcrModule implements OpticalCharacterRecognition{
             tesseract.setLanguage("lus");
             tesseract.setPageSegMode(11);
             tesseract.setOcrEngineMode(3);
-            ArrayList<String> config=new ArrayList<String>();
 
 
             String text = null;
 
 
-                text = tesseract.doOCR(processImage(image));
+            text = tesseract.doOCR(processImage(image));
 
-            System.out.print(text);
+//            System.out.print(text);
             String output="";
             int endOfLineOccurance=0;
             boolean lastEndOfLine=false;
@@ -88,22 +79,51 @@ public class OcrModule implements OpticalCharacterRecognition{
 
                 }
             }
-            switch (endOfLineOccurance)
+
+
+//            switch (endOfLineOccurance)
+//            {
+//                case 1:
+//                    return output;
+//                case 2:
+//                    return output.substring(output.indexOf('\n'));
+//                case 3:
+//                    output=output.substring(output.indexOf('\n'));
+//                    return output.substring(0,output.indexOf('\n'));
+//                default:
+//                    return String.valueOf(text.length());
+//
+//
+//
+//
+//            }
+            String returnString="";
+
+            for(int i=0;i<output.length();i++)
             {
-                case 1:
-                    return output;
-                case 2:
-                    return output.substring(output.indexOf('\n'));
-                case 3:
-                    output=output.substring(output.indexOf('\n'));
-                    return output.substring(0,output.indexOf('\n'));
-                default:
-                    return String.valueOf(text.length());
+                if(output.charAt(i)=='\n'&&(i+1==output.length()))
+                {
+                    break;
+                }
+                else if(output.charAt(i)=='\n')
+                {
+                    returnString="";
+                }
+                else
+                {
+                    returnString+=output.charAt(i);
 
-
-
+                }
 
             }
+            returnString=returnString.trim();
+            returnString=returnString.replaceAll(" ","");
+            if(returnString.length()==7)
+            {
+                returnString=returnString.replaceAll("T","7");
+            }
+            return returnString;
+
 
         } catch (TesseractException e) {
             e.printStackTrace();
@@ -113,7 +133,7 @@ public class OcrModule implements OpticalCharacterRecognition{
     }
     private static BufferedImage color2BlackandWhite(BufferedImage image)
     {
-        BufferedImage output=new BufferedImage(image.getWidth(),image.getHeight(),BufferedImage.TYPE_BYTE_BINARY);
+        BufferedImage output=new BufferedImage(image.getWidth(),image.getHeight(),BufferedImage.TYPE_BYTE_GRAY);
         Graphics2D graph=output.createGraphics();
         graph.drawImage(image,0,0,Color.WHITE,null);
         graph.dispose();
@@ -150,15 +170,7 @@ public class OcrModule implements OpticalCharacterRecognition{
         return null;
 
     }
-    private static BufferedImage increaseContrast(BufferedImage input)
-    {
-        ColorAdjust colorAdjust=new ColorAdjust();
-        colorAdjust.setContrast(0.2);
-        Image image=new Image(input.getSource().toString());
 
-        return null;
-
-    }
     private static BufferedImage cropImage(BufferedImage image)
     {
         BufferedImage output=image.getSubimage(0, (int) (image.getHeight()*0), image.getWidth(), (int) (image.getHeight()*(0.85)));
