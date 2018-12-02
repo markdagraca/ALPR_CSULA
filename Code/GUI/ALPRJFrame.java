@@ -621,6 +621,7 @@ public class ALPRJFrame extends javax.swing.JFrame {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
+        O
         /* Set the Nimbus look and feel */
         
     //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -652,6 +653,7 @@ public class ALPRJFrame extends javax.swing.JFrame {
              
             }
         });
+
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
