@@ -10,5 +10,6 @@
     <orderEntry type="module" module-name="RefrenceCode" />
     <orderEntry type="library" name="dist" level="project" />
     <orderEntry type="library" name="lib" level="project" />
+    <orderEntry type="module" module-name="ObjectRecognitionModule" />
   </component>
 </module>

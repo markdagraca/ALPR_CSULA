@@ -29,7 +29,19 @@ public class ALPRJFrame extends javax.swing.JFrame {
      * Creates new form ALPRJFrame
      */
     public ALPRJFrame() {
+        try {
+            UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (InstantiationException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (UnsupportedLookAndFeelException e) {
+            e.printStackTrace();
+        }
         initComponents();
+
     }
      String ImgPath = null;
     /**
@@ -480,6 +492,8 @@ public class ALPRJFrame extends javax.swing.JFrame {
         
         JFileChooser chooser = new JFileChooser();
         FileNameExtensionFilter filter = new FileNameExtensionFilter("*.images", "jpg","png");
+//        FileNameExtensionFilter filter = new FileNameExtensionFilter("*.images", "jpg","png");
+        new java.awt.FileDialog((java.awt.Frame) null).setVisible(true);
         chooser.addChoosableFileFilter(filter);
         chooser.showOpenDialog(null);
         File f = chooser.getSelectedFile();
@@ -489,7 +503,7 @@ public class ALPRJFrame extends javax.swing.JFrame {
 
 
         String path1 = new String(ob.findLicensePlateInImage(f).getAbsolutePath());
-        String path2 = new String("C:/Users/yi-laptop/Documents/WeChat Image_20180310182455.png");
+        String path2 = path1;
         String highlight_path = "../highlight.jpg";
         File highlight = new File(highlight_path);
 
