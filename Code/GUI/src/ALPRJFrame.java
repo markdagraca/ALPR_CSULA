@@ -529,6 +529,7 @@ public class ALPRJFrame extends javax.swing.JFrame {
 
         Pnumber.setText(licensePlateText);
         Plate_num.setText(licensePlateText);
+        setDisplayTextFromDatabase(licensePlateText);
 
 
 
@@ -547,32 +548,7 @@ public class ALPRJFrame extends javax.swing.JFrame {
 
     private void enterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_enterActionPerformed
         // TODO add your handling code here:
-
-        DataBaseSearch test=new DataBaseSearch();
-        String aa = Pnumber.getText();
-        Vehicle car=test.searchByPlate(aa, States.CA);
-        Profile owner=test.searchByID(car.getDriverLicence_ID(),States.CA);
-        TF_lname.setText(owner.getLastName());
-        TF_fname.setText(owner.getFirstName());
-        jTextField10.setText(owner.getMiddleName());
-        birth.setText(owner.getDate_of_birth().toString());
-        Exp_date.setText(owner.getDate_of_experation().toString());
-        jTextField6.setText(owner.getRace());
-        jTextField7.setText(owner.getEthnicity());
-        jTextField8.setText(owner.getEyeColor());
-        jTextField9.setText(owner.getHairColor());
-        height.setText(owner.getHairColor());
-        weight.setText(Integer.toString(owner.getWeight()));
-        gen.setText(owner.getGender());
-        ssn.setText(Integer.toString(owner.getSSN()));
-        Lnumber.setText(car.getDriverLicence_ID());
-        address.setText(car.getLegal_Owner_Address().toString());
-        VIN.setText(car.getVin());
-
-        boolean wanted = car.getWanted();
-        if(wanted){
-            JOptionPane.showMessageDialog(null, "WANTED!!!");
-        }
+        setDisplayTextFromDatabase(Pnumber.getText());
 
 
 
@@ -676,6 +652,43 @@ public class ALPRJFrame extends javax.swing.JFrame {
 
             }
         });
+    }
+    public void setDisplayTextFromDatabase(String plate)
+    {
+        DataBaseSearch dataBase=new DataBaseSearch();
+        String aa = plate;
+        Vehicle car=dataBase.searchByPlate(aa, States.CA);
+        Profile owner=dataBase.searchByID(car.getDriverLicence_ID(),States.CA);
+        System.out.println(aa);
+        TF_lname.setText(owner.getLastName());
+        TF_fname.setText(owner.getFirstName());
+        jTextField10.setText(owner.getMiddleName()!=null?owner.getMiddleName():"");
+        birth.setText(owner.getDate_of_birth().toString());
+        Exp_date.setText(owner.getDate_of_experation().toString());
+        jTextField6.setText(owner.getRace());
+        jTextField7.setText(owner.getEthnicity()!=null?owner.getEthnicity():"");
+        jTextField8.setText(owner.getEyeColor()!=null?owner.getEyeColor():"");
+        jTextField9.setText(owner.getHairColor()!=null?owner.getHairColor():"");
+        height.setText(String.valueOf(owner.getHeight()));
+        weight.setText(String.valueOf(owner.getWeight()));
+        gen.setText(owner.getGender());
+        ssn.setText(Integer.toString(owner.getSSN()));
+        Lnumber.setText(car.getDriverLicence_ID());
+        address.setText(car.getLegal_Owner_Address().toString());
+        VIN.setText(car.getVin());
+
+        boolean wanted = car.getWanted();
+        if(wanted){
+            JOptionPane.showMessageDialog(null, "WANTED!!!");
+        }
+        System.out.println("Vehicle Make: "+car.getMake()+" Model: "+car.getModel()+" Color: "+car.getColor());
+        if(car.getWanted())
+        {
+            System.out.println(owner.isNcic_want());
+            System.out.println(owner.getCriminalHistory().size());
+        }
+
+
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
