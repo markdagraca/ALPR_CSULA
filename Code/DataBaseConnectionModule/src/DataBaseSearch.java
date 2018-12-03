@@ -155,6 +155,7 @@ public class DataBaseSearch implements dataBaseSearchModule{
             		vechicleInf.setOwner_Address(address);
             		vechicleInf.setLegal_Owner_Address(address);
             		vechicleInf.setColor(rs.getString("vehiclecolor"));
+            		vechicleInf.setYear(Year.parse(rs.getString("year")));
                 }
             	 rs.close();
                  stmt.close();
