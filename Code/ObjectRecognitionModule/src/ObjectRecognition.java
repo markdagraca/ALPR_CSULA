@@ -18,6 +18,7 @@ import org.opencv.imgproc.Imgproc;
  * Automatic License Plate Reader: Module 1
  * Object Recognition
  * Base image is used as an input, and a file object that references the cropped image is returned.
+ * The module also keeps a reference of the edited image with a red box around the plate
  */
 public class ObjectRecognition implements application.objectRecognitionModule {
 	private File highlight = null;
@@ -28,11 +29,13 @@ public class ObjectRecognition implements application.objectRecognitionModule {
 		ObjectRecognition or = new ObjectRecognition();
 		File image = new File(path);
 		System.out.println(image.getAbsolutePath());
+		//Checking to see if module has sucessfully ran
 		if(image.exists())
 		{
 			File cropped = or.findLicensePlateInImage(image);
 
-			try{
+			try
+			{
 				File high = or.getHighlight();
 				String x = cropped.getAbsolutePath();
 				String y = high.getAbsolutePath();
@@ -40,7 +43,8 @@ public class ObjectRecognition implements application.objectRecognitionModule {
 				System.out.println("Cropped Image: " + x);
 				System.out.println("Highlighted Image: " + y);
 			}
-			catch(NullPointerException e){
+			catch(NullPointerException e)
+			{
 				System.out.println("Null Pointer Exception");
 				System.out.println("FindLicensePlateInImage has failed to detect a license plate.");
 			}
@@ -50,6 +54,7 @@ public class ObjectRecognition implements application.objectRecognitionModule {
 	
 	@Override
 	public File findLicensePlateInImage(File image) {
+		//Loading OpenCV library
 		System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
 		String path = image.getAbsolutePath();
 		
@@ -71,10 +76,12 @@ public class ObjectRecognition implements application.objectRecognitionModule {
 	    //Resizing the image so that less obscure and not necessary lines will show
 	    double threshold1 = 300;
 	    double threshold2 = 600;
+	    //Turning image into a black and white that only shows the edges of the image
 	    Imgproc.Canny(imageA, imageA, threshold1, threshold2);
 	    
 	    //Creating a list of contours for the image with the applied filters.
 	    List<MatOfPoint> contours = new ArrayList<MatOfPoint>();
+	    //Finding the contours in the editted image
 	    Imgproc.findContours(imageA, contours, new Mat(), Imgproc.RETR_EXTERNAL, Imgproc.CHAIN_APPROX_SIMPLE);
 	    
 	    //Creating a file object that will be returned once the method has completed
@@ -87,9 +94,11 @@ public class ObjectRecognition implements application.objectRecognitionModule {
 	    	double area = Imgproc.contourArea(contours.get(i));
 	    	
 	    	//Specifying for a minimum area of 100, so that small, insignificant, contours will be filtered out
-	    	if(area > 100){
+	    	if(area > 100)
+	    	{
 	    		//Standard size is 12 by 6
-		    	if (rect.width >= rect.height *1.8 && rect.width <= rect.height *2.2){
+		    	if (rect.width >= rect.height *1.8 && rect.width <= rect.height *2.2)
+		    	{
 		    		//Creating the highlighted image
 		    		Imgproc.rectangle(h, new Point(rect.x,rect.y), new Point(rect.x+rect.width,rect.y+rect.height),new Scalar(0,0,255),5);
 		    		String pathH  = "../highlight.jpg";
@@ -117,4 +126,3 @@ public class ObjectRecognition implements application.objectRecognitionModule {
 	}
 	
 } 
-
