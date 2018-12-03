@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c370533d-86b8-4269-9c04-093012f72f5d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/GUI/src/ALPRJFrame.java" afterPath="$PROJECT_DIR$/GUI/src/ALPRJFrame.java" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$1.class" afterPath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$1.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$10.class" afterPath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$10.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$11.class" afterPath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$11.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$2.class" afterPath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$2.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$3.class" afterPath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$3.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$4.class" afterPath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$4.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$5.class" afterPath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$5.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$6.class" afterPath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$6.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$7.class" afterPath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$7.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$8.class" afterPath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$8.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$9.class" afterPath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$9.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame.class" afterPath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame.class" />
+      <change beforePath="$PROJECT_DIR$/RefrenceCode/src/refrenceCode/Vehicle.java" afterPath="$PROJECT_DIR$/RefrenceCode/src/refrenceCode/Vehicle.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,7 +24,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ALPRJFrame.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ALPRJFrame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GUI/src/ALPRJFrame.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="361">
@@ -70,6 +57,21 @@
                 <element signature="e#9326#9327#0" expanded="true" />
                 <element signature="e#44651#44738#0" expanded="true" />
                 <marker date="1543805801016" expanded="true" signature="44215:44255" ph="select * fro... artists" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Vehicle.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/RefrenceCode/src/refrenceCode/Vehicle.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="799">
+              <caret line="120" column="6" lean-forward="false" selection-start-line="120" selection-start-column="6" selection-end-line="120" selection-end-column="6" />
+              <folding>
+                <element signature="e#1136#1137#0" expanded="true" />
+                <element signature="e#1164#1165#0" expanded="true" />
+                <element signature="e#1206#1207#0" expanded="true" />
+                <element signature="e#1240#1241#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -171,6 +173,7 @@
         <option value="$PROJECT_DIR$/Testing/src/Testing.java" />
         <option value="$PROJECT_DIR$/OCRmodule/src/OcrModule.java" />
         <option value="$PROJECT_DIR$/GUI/src/ALPRJFrame.java" />
+        <option value="$PROJECT_DIR$/RefrenceCode/src/refrenceCode/Vehicle.java" />
       </list>
     </option>
   </component>
@@ -201,10 +204,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -234,10 +236,29 @@
               <item name="OCRmodule" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
+              <item name="RefrenceCode" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
+              <item name="RefrenceCode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
+              <item name="RefrenceCode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="refrenceCode" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -467,7 +488,7 @@
       <workItem from="1543716589881" duration="244000" />
       <workItem from="1543716881700" duration="6736000" />
       <workItem from="1543747176434" duration="9191000" />
-      <workItem from="1543802352836" duration="1362000" />
+      <workItem from="1543802352836" duration="1986000" />
     </task>
     <servers />
   </component>
@@ -486,7 +507,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17533000" />
+    <option name="totallyTimeSpent" value="18157000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-13" y="-13" width="3866" height="2106" extended-state="7" />
@@ -506,7 +527,7 @@
       <window_info id="Flutter Outline" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5251641" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19616205" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -924,6 +945,19 @@
             <element signature="e#9326#9327#0" expanded="true" />
             <element signature="e#44651#44738#0" expanded="true" />
             <marker date="1543805801016" expanded="true" signature="44215:44255" ph="select * fro... artists" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RefrenceCode/src/refrenceCode/Vehicle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="120" column="6" lean-forward="false" selection-start-line="120" selection-start-column="6" selection-end-line="120" selection-end-column="6" />
+          <folding>
+            <element signature="e#1136#1137#0" expanded="true" />
+            <element signature="e#1164#1165#0" expanded="true" />
+            <element signature="e#1206#1207#0" expanded="true" />
+            <element signature="e#1240#1241#0" expanded="true" />
           </folding>
         </state>
       </provider>

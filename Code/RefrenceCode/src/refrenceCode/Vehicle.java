@@ -20,6 +20,7 @@ public class Vehicle {
     private Address owner_Address,legal_Owner_Address;
     private Date registrationDateExperation;
     private Year year;
+    private String color;
 
     public String getDriverLicence_ID() {
         return driverLicence_ID;
@@ -35,6 +36,14 @@ public class Vehicle {
 
     public void setLegalOwnerName(String legalOwnerName) {
         this.legalOwnerName = legalOwnerName;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
     }
 
 
@@ -106,10 +115,10 @@ public class Vehicle {
         owner_Address=null;
         isWanted=false;
         registrationDateExperation=null;
-        make=model=ownerName=id=vin=wantedDescription="";
+        make=model=ownerName=id=vin=wantedDescription=color="";
         year=null;
 
-    }
+    }q
 
     public Date getRegistrationDateExperation() {
         return registrationDateExperation;
