@@ -653,6 +653,9 @@ public class ALPRJFrame extends javax.swing.JFrame {
         Plate_num.setText(null);
         lbl_image.setIcon(null);
         lbl_2.setIcon(null);
+        model.setText(null);
+        color.setText(null);
+        make.setText(null);
     }
 
     public class Function{

@@ -2,27 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c370533d-86b8-4269-9c04-093012f72f5d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GUI/src/ALPRJFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/src/ALPRJFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataBaseConnectionModule/DataBaseSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataBaseConnectionModule/DataBaseSearch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$10.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$11.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$12.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$12.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$9.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$Function.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame$Function.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GUI/ALPRJFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ObjectRecognitionModule/ObjectRecognition.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ObjectRecognitionModule/ObjectRecognition.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/output.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cropped_plate.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../cropped_plate.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../highlight.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../highlight.jpg" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,35 +25,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GUI/src/ALPRJFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="599" column="41" lean-forward="true" selection-start-line="599" selection-start-column="41" selection-end-line="599" selection-end-column="41" />
+            <state relative-caret-position="150">
+              <caret line="651" column="26" lean-forward="true" selection-start-line="651" selection-start-column="26" selection-end-line="651" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#700#701#0" expanded="true" />
                 <element signature="e#732#733#0" expanded="true" />
                 <element signature="e#1014#1077#0" expanded="true" />
-                <element signature="e#3558#3559#0" expanded="true" />
-                <element signature="e#3616#3617#0" expanded="true" />
-                <element signature="e#3958#3959#0" expanded="true" />
-                <element signature="e#4017#4018#0" expanded="true" />
-                <element signature="e#5682#5683#0" expanded="true" />
-                <element signature="e#5741#5742#0" expanded="true" />
-                <element signature="e#6076#6077#0" expanded="true" />
-                <element signature="e#6136#6137#0" expanded="true" />
-                <element signature="e#6465#6466#0" expanded="true" />
-                <element signature="e#6522#6523#0" expanded="true" />
-                <element signature="e#6820#6821#0" expanded="true" />
-                <element signature="e#6880#6881#0" expanded="true" />
-                <element signature="e#7553#7554#0" expanded="true" />
-                <element signature="e#7611#7612#0" expanded="true" />
-                <element signature="e#8012#8013#0" expanded="true" />
-                <element signature="e#8067#8068#0" expanded="true" />
-                <element signature="e#8406#8407#0" expanded="true" />
-                <element signature="e#8465#8466#0" expanded="true" />
-                <element signature="e#8817#8818#0" expanded="true" />
-                <element signature="e#8874#8875#0" expanded="true" />
-                <element signature="e#9246#9247#0" expanded="true" />
-                <element signature="e#9307#9308#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -96,6 +54,7 @@
       <find>color</find>
       <find>make</find>
       <find>model</find>
+      <find>want</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -163,7 +122,7 @@
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="596" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543821504264" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543821701794" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -302,7 +261,7 @@
       <workItem from="1543747176434" duration="9191000" />
       <workItem from="1543802352836" duration="4148000" />
       <workItem from="1543818955922" duration="2100000" />
-      <workItem from="1543821210181" duration="288000" />
+      <workItem from="1543821210181" duration="491000" />
     </task>
     <servers />
   </component>
@@ -321,13 +280,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22707000" />
+    <option name="totallyTimeSpent" value="22910000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20134228" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20134228" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -336,7 +295,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3298969" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33144477" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33144477" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3998915" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -505,35 +464,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/GUI/src/ALPRJFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="599" column="41" lean-forward="true" selection-start-line="599" selection-start-column="41" selection-end-line="599" selection-end-column="41" />
+        <state relative-caret-position="150">
+          <caret line="651" column="26" lean-forward="true" selection-start-line="651" selection-start-column="26" selection-end-line="651" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#700#701#0" expanded="true" />
             <element signature="e#732#733#0" expanded="true" />
             <element signature="e#1014#1077#0" expanded="true" />
-            <element signature="e#3558#3559#0" expanded="true" />
-            <element signature="e#3616#3617#0" expanded="true" />
-            <element signature="e#3958#3959#0" expanded="true" />
-            <element signature="e#4017#4018#0" expanded="true" />
-            <element signature="e#5682#5683#0" expanded="true" />
-            <element signature="e#5741#5742#0" expanded="true" />
-            <element signature="e#6076#6077#0" expanded="true" />
-            <element signature="e#6136#6137#0" expanded="true" />
-            <element signature="e#6465#6466#0" expanded="true" />
-            <element signature="e#6522#6523#0" expanded="true" />
-            <element signature="e#6820#6821#0" expanded="true" />
-            <element signature="e#6880#6881#0" expanded="true" />
-            <element signature="e#7553#7554#0" expanded="true" />
-            <element signature="e#7611#7612#0" expanded="true" />
-            <element signature="e#8012#8013#0" expanded="true" />
-            <element signature="e#8067#8068#0" expanded="true" />
-            <element signature="e#8406#8407#0" expanded="true" />
-            <element signature="e#8465#8466#0" expanded="true" />
-            <element signature="e#8817#8818#0" expanded="true" />
-            <element signature="e#8874#8875#0" expanded="true" />
-            <element signature="e#9246#9247#0" expanded="true" />
-            <element signature="e#9307#9308#0" expanded="true" />
           </folding>
         </state>
       </provider>
