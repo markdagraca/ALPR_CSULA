@@ -118,7 +118,7 @@ public class Vehicle {
         make=model=ownerName=id=vin=wantedDescription=color="";
         year=null;
 
-    }q
+    }
 
     public Date getRegistrationDateExperation() {
         return registrationDateExperation;
