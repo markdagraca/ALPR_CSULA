@@ -4,7 +4,6 @@ import java.sql.*;
 import java.time.Year;
 import java.util.ArrayList;
 
-
 public class DataBaseSearch implements dataBaseSearchModule{
 	
 	private static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";  
@@ -100,7 +99,6 @@ public class DataBaseSearch implements dataBaseSearchModule{
             e.printStackTrace();
             return null;
         }
-//		return null;
 	}
 
 	@Override
@@ -139,7 +137,9 @@ public class DataBaseSearch implements dataBaseSearchModule{
             		vechicleInf.setVin(rs.getString("vin"));
             		if(rs.getInt("isWanted") == 1) {
             			vechicleInf.setWanted(true);
+            			vechicleInf.setWantedDescription(rs.getString("wantedescription"));
             		}
+            		vechicleInf.setId(rs.getString("plate_number"));
             		vechicleInf.setDriverLicence_ID(rs.getString("license_number"));
             		vechicleInf.setVehicleType(Vehicle.VehicleType.valueOf("AUTO"));
             		String date = rs.getString("expirationdate");
@@ -151,7 +151,8 @@ public class DataBaseSearch implements dataBaseSearchModule{
             		address.setState(state);
             		address.setZipcode(rs.getInt("postalcode"));
             		vechicleInf.setOwner_Address(address);
-            		vechicleInf.setLegal_Owner_Address(address);            		
+            		vechicleInf.setLegal_Owner_Address(address);
+            		vechicleInf.setColor(rs.getString("vehiclecolor"));
                 }
             	 rs.close();
                  stmt.close();
