@@ -313,7 +313,8 @@ public class DataBaseSearch implements dataBaseSearchModule{
                 	crimeAddress.setState(sta);
                 	crimeAddress.setZipcode(s.indexOf(",")+6);
                 	crime.setLocation_Of_Occurance(crimeAddress);
-                	criminalHistory.add(new Crime());
+                	criminalHistory.add(crime);
+                	allInf.setCriminalHistory(criminalHistory);
         		}
     		}
         }
