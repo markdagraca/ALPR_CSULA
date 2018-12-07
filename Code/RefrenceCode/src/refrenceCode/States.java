@@ -1,5 +1,8 @@
 package refrenceCode;
-
+/**
+ * @author Mark D
+ *
+ */
 public enum States {
     AK, AL, AR, AZ, CA, CO, CT, DC, DE, FL, GA, HI, IA, ID, IL,
     IN, KS, KY, LA, MA, MD, ME, MI, MN, MO, MS, MT, NC, ND, NE,

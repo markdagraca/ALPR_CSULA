@@ -1,5 +1,8 @@
 package refrenceCode;
-
+/**
+ * @author Mark D
+ *
+ */
 import java.io.File;
 
 public interface OpticalCharacterRecognition {

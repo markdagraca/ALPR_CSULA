@@ -25,10 +25,18 @@ import java.sql.ResultSet;
 public class ALPRJFrame extends javax.swing.JFrame {
 
 
+    private DataBaseSearch dataBase;
+    private ObjectRecognition ob;
+    private OcrModule ocr;
     /**
+     *
      * Creates new form ALPRJFrame
      */
     public ALPRJFrame() {
+
+        dataBase=new DataBaseSearch();
+        ob=new ObjectRecognition();
+        ocr=new OcrModule();
         initComponents();
     }
     String ImgPath = null;
@@ -109,7 +117,7 @@ public class ALPRJFrame extends javax.swing.JFrame {
         });
 
         jLabel3.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        jLabel3.setText("License Number:");
+        jLabel3.setText("Driver License #:");
 
         VIN_1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         VIN_1.setText("VIN:");
@@ -166,13 +174,13 @@ public class ALPRJFrame extends javax.swing.JFrame {
 
         TF_lname.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
 
-        enter.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        enter.setText("enter");
-        enter.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                enterActionPerformed(evt);
-            }
-        });
+//        enter.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+//        enter.setText("enter");
+//        enter.addActionListener(new java.awt.event.ActionListener() {
+//            public void actionPerformed(java.awt.event.ActionEvent evt) {
+//                enterActionPerformed(evt);
+//            }
+//        });
 
         VIN.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
 
@@ -246,11 +254,11 @@ public class ALPRJFrame extends javax.swing.JFrame {
 
         jLabel4.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setText("Model:");
+        jLabel4.setText("Make:");
 
         jLabel5.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setText("Make:");
+        jLabel5.setText("Model:");
 
         jLabel6.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -290,7 +298,7 @@ public class ALPRJFrame extends javax.swing.JFrame {
                                                                 .addGap(7, 7, 7)
                                                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                                                         .addComponent(select, javax.swing.GroupLayout.DEFAULT_SIZE, 93, Short.MAX_VALUE)
-                                                                        .addComponent(enter, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                                                        )
                                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                                 .addComponent(clear, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
                                                         .addGroup(layout.createSequentialGroup()
@@ -300,7 +308,7 @@ public class ALPRJFrame extends javax.swing.JFrame {
                                                                         .addGroup(layout.createSequentialGroup()
                                                                                 .addComponent(jLabel4)
                                                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                                .addComponent(model, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                                                                .addComponent(make, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                                         .addGroup(layout.createSequentialGroup()
                                                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -313,7 +321,7 @@ public class ALPRJFrame extends javax.swing.JFrame {
                                                                                 .addGap(43, 43, 43)
                                                                                 .addComponent(jLabel5)
                                                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                                .addComponent(make, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                                .addComponent(model, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                                                 .addGap(46, 46, 46))))))
                                         .addGroup(layout.createSequentialGroup()
                                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -408,7 +416,7 @@ public class ALPRJFrame extends javax.swing.JFrame {
                                                                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                                                                         .addComponent(Lnumber, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                                                         .addComponent(jLabel3)
-                                                                                        .addComponent(enter, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                                                                     )))
                                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                                                         .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -424,8 +432,8 @@ public class ALPRJFrame extends javax.swing.JFrame {
                                                                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                                 .addComponent(jLabel5)
                                                                 .addComponent(jLabel6)
-                                                                .addComponent(model, javax.swing.GroupLayout.DEFAULT_SIZE, 37, Short.MAX_VALUE))
-                                                        .addComponent(make)
+                                                                .addComponent(make, javax.swing.GroupLayout.DEFAULT_SIZE, 37, Short.MAX_VALUE))
+                                                        .addComponent(model)
                                                         .addComponent(color))
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
                                                 .addComponent(Plate_num, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -514,8 +522,7 @@ public class ALPRJFrame extends javax.swing.JFrame {
         String b = fd.getFile();
         File f = new File(a+b);
         String path = f.getAbsolutePath();
-        ObjectRecognition ob =  new ObjectRecognition();
-        OcrModule ocr=new OcrModule();
+
         File highlight,cropped;
         String licensePlateText;
 
@@ -574,43 +581,9 @@ public class ALPRJFrame extends javax.swing.JFrame {
 
     private void enterActionPerformed(java.awt.event.ActionEvent evt) {
         // TODO add your handling code here:
-<<<<<<< HEAD
-        setDisplayTextFromDatabase(Pnumber.getText());
-=======
 
-        DataBaseSearch test=new DataBaseSearch();
-        String aa = Pnumber.getText();
-        Vehicle car=test.searchByPlate(aa, States.CA);
-        Profile owner=test.searchByID(car.getDriverLicence_ID(),States.CA);
-        TF_lname.setText(owner.getLastName());
-        TF_fname.setText(owner.getFirstName());
-        jTextField10.setText(owner.getMiddleName());
-        birth.setText(owner.getDate_of_birth().toString());
-        Exp_date.setText(owner.getDate_of_experation().toString());
-        jTextField6.setText(owner.getRace());
-        jTextField7.setText(owner.getEthnicity());
-        jTextField8.setText(owner.getEyeColor());
-        jTextField9.setText(owner.getHairColor());
-        height.setText(owner.getHairColor());
-        weight.setText(Integer.toString(owner.getWeight()));
-        gen.setText(owner.getGender());
-        Lnumber.setText(car.getDriverLicence_ID());
-        address.setText(car.getLegal_Owner_Address().toString());
-        VIN.setText(car.getVin());
-        model.setText(car.getModel());
-        make.setText(car.getMake());
-        color.setText(car.getColor());
 
-        boolean wanted = car.getWanted();
-        if(wanted){
-
-            UIManager.put("OptionPane.minimumSize",new Dimension(300,300));
-            JLabel label = new JLabel("WANTED!!!");
-            label.setFont(new Font("Arial", Font.BOLD, 80));
-            JOptionPane.showMessageDialog(null,label);
-        }
->>>>>>> ALPR_3
-
+       setDisplayTextFromDatabase(Pnumber.getText());
 
 
 
@@ -716,9 +689,10 @@ public class ALPRJFrame extends javax.swing.JFrame {
             }
         });
     }
+
     public void setDisplayTextFromDatabase(String plate)
     {
-        DataBaseSearch dataBase=new DataBaseSearch();
+
         String aa = plate;
         Vehicle car=dataBase.searchByPlate(aa, States.CA);
         Profile owner=dataBase.searchByID(car.getDriverLicence_ID(),States.CA);
@@ -735,14 +709,29 @@ public class ALPRJFrame extends javax.swing.JFrame {
         height.setText(String.valueOf(owner.getHeight()));
         weight.setText(String.valueOf(owner.getWeight()));
         gen.setText(owner.getGender());
-        ssn.setText(Integer.toString(owner.getSSN()));
+
         Lnumber.setText(car.getDriverLicence_ID());
         address.setText(car.getLegal_Owner_Address().toString());
         VIN.setText(car.getVin());
+        make.setText(car.getMake());
+        model.setText(car.getModel());
+        color.setText(car.getColor());
+
 
         boolean wanted = car.getWanted();
         if(wanted){
-            JOptionPane.showMessageDialog(null, "WANTED!!!");
+            Alert  alert=new Alert("..//Audio//alert.wav");
+            alert.play();
+
+
+            UIManager.put("OptionPane.minimumSize",new Dimension(300,300));
+
+            JLabel label = new JLabel("WANTED!!! \n "+car.getWantedDescription());
+
+            label.setFont(new Font("Arial", Font.BOLD, 150));
+            JOptionPane.showMessageDialog(null,label);
+            alert.stop();
+            wanted=false;
         }
         System.out.println("Vehicle Make: "+car.getMake()+" Model: "+car.getModel()+" Color: "+car.getColor());
         if(car.getWanted())

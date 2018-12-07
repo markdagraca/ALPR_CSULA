@@ -1,7 +1,10 @@
 package refrenceCode;
 
 import java.util.Date;
-
+/**
+ * @author Mark D
+ *
+ */
 public class Crime {
 
     private String penalCode,Description,comment;

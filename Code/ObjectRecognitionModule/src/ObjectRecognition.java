@@ -12,6 +12,7 @@ import org.opencv.core.Scalar;
 import org.opencv.core.Size;
 import org.opencv.imgcodecs.Imgcodecs;
 import org.opencv.imgproc.Imgproc;
+import refrenceCode.objectRecognitionModule;
 
 /**
  * @author Ryan Peralta
@@ -20,7 +21,7 @@ import org.opencv.imgproc.Imgproc;
  * Base image is used as an input, and a file object that references the cropped image is returned.
  * The module also keeps a reference of the edited image with a red box around the plate
  */
-public class ObjectRecognition implements application.objectRecognitionModule {
+public class ObjectRecognition implements objectRecognitionModule {
 	private File highlight = null;
 	
 	public static void main(String[] args){
@@ -118,10 +119,15 @@ public class ObjectRecognition implements application.objectRecognitionModule {
 	    	}
 	    }
 	    System.out.println("No license plate found!");
+	    if(highlight==null)
+		{
+			highlight=image;
+		}
 	    return plate;
 	}
 	
 	public File getHighlight(){
+
 		return highlight;	
 	}
 	

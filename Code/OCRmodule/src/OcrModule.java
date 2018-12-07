@@ -13,6 +13,10 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 
+/**
+ * @author Mark D
+ *
+ */
 public class OcrModule implements OpticalCharacterRecognition{
 
 
@@ -51,6 +55,10 @@ public class OcrModule implements OpticalCharacterRecognition{
     @Override
     public String findLicencePlateText(File image) {
         Tesseract tesseract = new Tesseract();
+        if(image==null)
+        {
+            return "";
+        }
 
         try {
 
@@ -186,8 +194,8 @@ public class OcrModule implements OpticalCharacterRecognition{
             output=resizeImage(output);
             output=color2BlackandWhite(output);
             output=cropImage(output);
-            File file=new File("output.jpg");
-            ImageIO.write(output,"jpg",file);
+//            File file=new File("output.jpg");
+//            ImageIO.write(output,"jpg",file);
 
             return output;
         } catch (IOException e) {

@@ -1,7 +1,10 @@
-package application;
+package refrenceCode;
 
 import java.io.File;
-
+/**
+ * @author Mark D
+ *
+ */
 public interface objectRecognitionModule {
     /**
      *
